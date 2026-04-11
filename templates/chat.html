@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat</title>
+</head>
+<body>
+<h2>Chat</h2>
+{% for m in msgs %}
+<p><b>{{m[1]}}</b>: {{m[3]}}</p>
+{% endfor %}
+<form method="POST">
+<input name="msg">
+<button>Send</button>
+</form>
+</body>
+</html>

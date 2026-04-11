@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAINAI - Access Portal</title>
+    <!-- Importing Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Importing Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <style>
+        :root {
+            /* Bio-Emerald Theme */
+            --bg-body: #020617;
+            --bg-card: rgba(6, 78, 59, 0.4);
+            --bg-input: rgba(0, 0, 0, 0.4);
+            --text-main: #ecfdf5;
+            --text-muted: #6ee7b7;
+            --primary: #84cc16;       /* Lime 500 */
+            --primary-glow: rgba(132, 204, 22, 0.5);
+            --secondary: #10b981;     /* Emerald 500 */
+            --border: rgba(132, 204, 22, 0.3);
+            --radius: 16px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .alert {
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-size: 14px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(0, 0, 0, 0.45);
+            box-shadow: 0 0 10px rgba(132, 204, 22, 0.25);
+        }
+
+        .alert-success {
+            color: #bbf7d0;
+            border-color: #84cc16;
+        }
+
+        .alert-error {
+            color: #fecaca;
+            border-color: #ef4444;
+        }
+
+        .alert-info {
+            color: #d6fcf7;
+            border-color: #0ea5e9;
+        }
+
+        /* --- 3D Canvas --- */
+        #canvas-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at center, #022c22 0%, #020617 100%);
+        }
+
+        /* --- Main Card --- */
+        .card {
+            width: 400px;
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .brand-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .brand-logo i {
+            font-size: 48px;
+            color: var(--primary);
+            filter: drop-shadow(0 0 10px var(--primary-glow));
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .brand-logo h1 {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* --- Form Panels --- */
+        .form-panel {
+            display: none;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        .form-panel.active {
+            display: block;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 24px;
+            color: white;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            outline: none;
+            transition: all 0.2s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 15px var(--primary-glow);
+            background-color: rgba(0,0,0,0.6);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px var(--primary-glow);
+            filter: brightness(1.1);
+        }
+
+        /* --- Switch Links --- */
+        .switch-text {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .switch-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 5px;
+            cursor: pointer;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .switch-link:hover {
+            border-bottom-color: var(--primary);
+        }
+
+        /* --- Divider --- */
+        .divider {
+            display: none;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 480px) {
+            .card {
+                width: 90%;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 3D Background -->
+    <div id="canvas-container"></div>
+
+    <div class="card">
+        <div class="brand-logo">
+            <i class="ph ph-brain"></i>
+            <h1>BRAINAI</h1>
+        </div>
+
+        <!-- LOGIN PANEL -->
+        <div id="login-panel" class="form-panel active">
+            <!-- FLASH MESSAGES -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, msg in messages %}
+                        <div class="alert alert-{{ category }}">{% if category == 'success' %}✅ {% endif %}{{ msg }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <h2>Welcome Back</h2>
+            <form action="/" method="POST">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Email" required autocomplete="email">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password" required autocomplete="current-password">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="switch-text">
+                Don't have an account?
+                <span class="switch-link" onclick="togglePanel('register')">Register here</span>
+            </div>
+            <div class="switch-text">
+                Admin login?
+                <span class="switch-link" onclick="togglePanel('admin-login')">Admin panel</span>
+            </div>
+        </div>
+
+        <!-- REGISTER PANEL -->
+        <div id="register-panel" class="form-panel">
+            <!-- FLASH MESSAGES -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, msg in messages %}
+                        <div class="alert alert-{{ category }}">{% if category == 'success' %}✅ {% endif %}{{ msg }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <h2>Create Account</h2>
+            <form action="/register" method="POST">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Name" required autocomplete="name">
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Email" required autocomplete="email">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password" required autocomplete="new-password">
+                </div>
+                <div class="input-group">
+                    <label>Admin Key (optional)</label>
+                    <input type="text" name="admin_key" placeholder="Admin Key (optional)">
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <div class="switch-text">
+                Already have an account?
+                <span class="switch-link" onclick="togglePanel('login')">Login here</span>
+            </div>
+        </div>
+
+        <!-- ADMIN LOGIN PANEL -->
+        <div id="admin-login-panel" class="form-panel">
+            <!-- FLASH MESSAGES -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, msg in messages %}
+                        <div class="alert alert-{{ category }}">{% if category == 'success' %}✅ {% endif %}{{ msg }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <h2>Admin Login</h2>
+            <form action="/admin" method="POST">
+                <div class="input-group">
+                    <label>Admin Email</label>
+                    <input type="email" name="email" placeholder="admin@brainai.com" required autocomplete="email">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Admin password" required autocomplete="current-password">
+                </div>
+                <button type="submit">Enter Admin Panel</button>
+            </form>
+            <div class="switch-text">
+                Back to user login?
+                <span class="switch-link" onclick="togglePanel('login')">Login here</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // --- Panel Switch Logic --- (with admin-login)
+        function togglePanel(panelName) {
+            const loginPanel    = document.getElementById('login-panel');
+            const registerPanel = document.getElementById('register-panel');
+            const adminPanel    = document.getElementById('admin-login-panel');
+
+            // Hide all
+            loginPanel.classList.remove('active');
+            registerPanel.classList.remove('active');
+            adminPanel.classList.remove('active');
+
+            // Small delay to allow CSS transitions
+            setTimeout(() => {
+                if (panelName === 'login') {
+                    loginPanel.classList.add('active');
+                } else if (panelName === 'register') {
+                    registerPanel.classList.add('active');
+                } else if (panelName === 'admin-login') {
+                    adminPanel.classList.add('active');
+                }
+            }, 50);
+        }
+
+        // --- 3D Background (Neural Network) ---
+        const scene = new THREE.Scene();
+        scene.fog = new THREE.FogExp2(0x020617, 0.002);
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        const particleCount = 250;
+        const particles = new THREE.BufferGeometry();
+        const positions = new Float32Array(particleCount * 3);
+        const velocities = [];
+
+        for (let i = 0; i < particleCount; i++) {
+            positions[i * 3] = (Math.random() - 0.5) * 20;
+            positions[i * 3 + 1] = (Math.random() - 0.5) * 20;
+            positions[i * 3 + 2] = (Math.random() - 0.5) * 20;
+            velocities.push({
+                x: (Math.random() - 0.5) * 0.01,
+                y: (Math.random() - 0.5) * 0.01,
+                z: (Math.random() - 0.5) * 0.01
+            });
+        }
+        particles.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+        const particleMaterial = new THREE.PointsMaterial({
+            color: 0x84cc16,
+            size: 0.15,
+            transparent: true,
+            opacity: 0.8,
+            blending: THREE.AdditiveBlending
+        });
+        const particleSystem = new THREE.Points(particles, particleMaterial);
+        scene.add(particleSystem);
+
+        const lineMaterial = new THREE.LineBasicMaterial({
+            color: 0x10b981,
+            transparent: true,
+            opacity: 0.15
+        });
+
+        let mouseX = 0, mouseY = 0;
+        document.addEventListener('mousemove', (event) => {
+            mouseX = (event.clientX - window.innerWidth / 2);
+            mouseY = (event.clientY - window.innerHeight / 2);
+        });
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+            particleSystem.rotation.y += 0.05 * (mouseX * 0.001 - particleSystem.rotation.y);
+            particleSystem.rotation.x += 0.05 * (mouseY * 0.001 - particleSystem.rotation.x);
+
+            const pos = particleSystem.geometry.attributes.position.array;
+            for (let i = 0; i < particleCount; i++) {
+                pos[i * 3] += velocities[i].x;
+                pos[i * 3 + 1] += velocities[i].y;
+                pos[i * 3 + 2] += velocities[i].z;
+                if (Math.abs(pos[i * 3]) > 15) velocities[i].x *= -1;
+                if (Math.abs(pos[i * 3 + 1]) > 15) velocities[i].y *= -1;
+                if (Math.abs(pos[i * 3 + 2]) > 15) velocities[i].z *= -1;
+            }
+            particleSystem.geometry.attributes.position.needsUpdate = true;
+
+            const linePositions = [];
+            const p1 = new THREE.Vector3();
+            const p2 = new THREE.Vector3();
+            for (let i = 0; i < particleCount; i++) {
+                p1.set(pos[i * 3], pos[i * 3 + 1], pos[i * 3 + 2]);
+                for (let j = i + 1; j < particleCount; j++) {
+                    p2.set(pos[j * 3], pos[j * 3 + 1], pos[j * 3 + 2]);
+                    if (p1.distanceTo(p2) < 3.5) {
+                        linePositions.push(p1.x, p1.y, p1.z, p2.x, p2.y, p2.z);
+                    }
+                }
+            }
+
+            const oldLines = scene.getObjectByName("synapses");
+            if (oldLines) scene.remove(oldLines);
+
+            const lineGeometry = new THREE.BufferGeometry();
+            lineGeometry.setAttribute('position', new THREE.Float32BufferAttribute(linePositions, 3));
+            const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
+            lines.name = "synapses";
+            lines.rotation.y = particleSystem.rotation.y;
+            lines.rotation.x = particleSystem.rotation.x;
+            scene.add(lines);
+            renderer.render(scene, camera);
+        }
+
+        camera.position.z = 15;
+        animate();
+    </script>
+</body>
+</html>
