@@ -197,4 +197,3 @@ MIT License – see `LICENSE` file (if you add it later).
 
 ---
 
-If you copy this `README.md` into your repo root and push, it will look professional and immediately clear to visitors 🎯.
