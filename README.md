@@ -300,6 +300,8 @@ This is better than a placeholder because it provides an audit trail with dates 
 Use these cleaner labels in your README:
 
 - Login Portal.
+<img width="757" height="869" alt="Screenshot 2026-04-13 225034" src="https://github.com/user-attachments/assets/466370dc-a5e4-4827-a6bd-d58fd2b98a06" />
+
 - Patient Upload Dashboard.
 - Segmentation Result View.
 - Confidence Heatmap.
