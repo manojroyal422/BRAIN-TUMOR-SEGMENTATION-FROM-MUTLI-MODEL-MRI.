@@ -303,13 +303,32 @@ Use these cleaner labels in your README:
 <img width="757" height="869" alt="Screenshot 2026-04-13 225034" src="https://github.com/user-attachments/assets/466370dc-a5e4-4827-a6bd-d58fd2b98a06" />
 
 - Patient Upload Dashboard.
+  <img width="1764" height="741" alt="Screenshot 2026-04-15 122623" src="https://github.com/user-attachments/assets/f39d243c-f921-4b14-88d0-d8f49f00d413" />
+
 - Segmentation Result View.
+- <img width="1441" height="640" alt="Screenshot 2026-04-15 114449" src="https://github.com/user-attachments/assets/fab4bb24-5b20-4831-b7bc-1714a3681f57" />
+
 - Confidence Heatmap.
+  <img width="1839" height="885" alt="Screenshot 2026-04-15 114511" src="https://github.com/user-attachments/assets/d613f51c-00ad-402e-bd55-49d366d13ee0" />
+<img width="1773" height="776" alt="Screenshot 2026-04-15 114530" src="https://github.com/user-attachments/assets/f6b29da1-a43a-4053-b8c6-52cff4da863d" />
+
 - Slice-wise Tumor Activity Graph.
+  <img width="1916" height="928" alt="Screenshot 2026-04-15 114539" src="https://github.com/user-attachments/assets/546902ec-e09f-4e46-a32c-2e062585ccaf" />
+
 - Output Download Section.
+  <img width="1712" height="530" alt="Screenshot 2026-04-15 114612" src="https://github.com/user-attachments/assets/d24c7a12-a1f3-4b19-a6b7-2fbfc8cafbd2" />
+
 - Patient Medical History.
+  <img width="1633" height="824" alt="Screenshot 2026-04-15 120055" src="https://github.com/user-attachments/assets/ed3e8a5f-6715-42ac-aa7d-aa5ec69c9dda" />
+
 - User Profile.
+- <img width="1638" height="831" alt="Screenshot 2026-04-15 120113" src="https://github.com/user-attachments/assets/39e33aa0-8cd7-4bd8-b4c3-42674eb408a5" />
+
 - Admin Dashboard.
+- <img width="1625" height="762" alt="Screenshot 2026-04-15 121706" src="https://github.com/user-attachments/assets/8fa4bc0b-8388-43da-afe8-83e5a3d92c22" />
+<img width="1793" height="815" alt="Screenshot 2026-04-15 121647" src="https://github.com/user-attachments/assets/14a6275d-c2bb-465d-b385-a018182df0e5" />
+<img width="1778" height="866" alt="Screenshot 2026-04-15 121629" src="https://github.com/user-attachments/assets/2850db97-589e-43fc-9ec0-e9ac55ac0249" />
+
 - Report Activity Log. [web:242][web:244]
 
 ---
