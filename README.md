@@ -141,31 +141,26 @@ brainai/
 ## 📈 Demo Screenshots
 ```MODEL PUT
 LOgING PAGE
+## 📈 Demo Screenshots
 
-<img width="757" height="869" alt="Screenshot 2026-04-13 225034" src="https://github.com/user-attachments/assets/cf7ffc39-abca-4b58-b63a-3f673c5b697d" />
+### 🔐 Login Page
+![Login](https://github.com/user-attachments/assets/cf7ffc39-abca-4b58-b63a-3f673c5b697d)
 
-USER LOGIN <img width="1824" height="820" alt="Screenshot 2026-04-13 225100" src="https://github.com/user-attachments/assets/6e2024ef-c7d3-436b-96d3-68d720685eb1" />
-UPLOAD DATA
-<img width="1764" height="741" alt="Screenshot 2026-04-15 122623" src="https://github.com/user-attachments/assets/53f4232f-d58c-45ce-9a9f-c9cadd62da40" />
-OUTPUT <img width="1839" height="885" alt="Screenshot 2026-04-15 114511" src="https://github.com/user-attachments/assets/4bc5795a-3319-4f7a-a5a1-5fcb24871953" />
-<img width="1441" height="640" alt="Screenshot 2026-04-15 114449" src="https://github.com/user-attachments/assets/94ae691b-0c9b-46d7-9087-61eb3a114e46" />
-GRAPH
-<img width="1916" height="928" alt="Screenshot 2026-04-15 114539" src="https://github.com/user-attachments/assets/3c0a2ed9-636a-4fab-bcb3-d509093dea45" />
-OUTP PUT DOWNLOAD
-<img width="1712" height="530" alt="Screenshot 2026-04-15 114612" src="https://github.com/user-attachments/assets/b41a5420-7826-4fce-851d-b0575dabd501" />
-MEDICAL HISTORY
-<img width="1638" height="831" alt="Screenshot 2026-04-15 120113" src="https://github.com/user-attachments/assets/96e7eb04-281a-4bc2-b0df-593097270809" />
-USER PROFILE
-<img width="1633" height="824" alt="Screenshot 2026-04-15 120055" src="https://github.com/user-attachments/assets/8b3a00a9-52bd-42eb-ac91-32bcf5d92111" />
-ADMIN
-<img width="1778" height="866" alt="Screenshot 2026-04-15 121629" src="https://github.com/user-attachments/assets/f887bfe5-4a20-4bad-8463-056500d30f41" />
-<img width="1771" height="861" alt="Screenshot 2026-04-15 121755" src="https://github.com/user-attachments/assets/ce88c0ff-d31a-4952-94af-5c906bfb7c5b" />
-<img width="1625" height="762" alt="Screenshot 2026-04-15 121706" src="https://github.com/user-attachments/assets/4af379dd-077b-4fc1-a308-ef845af6ad2b" />
-<img width="1793" height="815" alt="Screenshot 2026-04-15 121647" src="https://github.com/user-attachments/assets/d0904906-0de3-4b0e-bb89-772d8a9fa612" />
+### 👤 User Dashboard
+![User Dashboard](https://github.com/user-attachments/assets/6e2024ef-c7d3-436b-96d3-68d720685eb1)
 
-<img width="500" height="500" alt="confidence map" src="https://github.com/user-attachments/assets/97815290-2b76-4d7f-8d23-07980037e708" />
-<img width="640" height="480" alt="slice graph" src="https://github.com/user-attachments/assets/27a6e60f-fe30-4258-9099-98459588c211" />
+### 📤 Upload Data
+![Upload](https://github.com/user-attachments/assets/53f4232f-d58c-45ce-9a9f-c9cadd62da40)
 
+### 📊 Output
+![Output1](https://github.com/user-attachments/assets/4bc5795a-3319-4f7a-a5a1-5fcb24871953)
+![Output2](https://github.com/user-attachments/assets/94ae691b-0c9b-46d7-9087-61eb3a114e46)
+
+### 📈 Graph
+![Graph](https://github.com/user-attachments/assets/3c0a2ed9-636a-4fab-bcb3-d509093dea45)
+
+### 📥 Download
+![Download](https://github.com/user-attachments/assets/b41a5420-7826-4fce-851d-b0575dabd501)
 ---
 
 ## 🔍 Model Performance
