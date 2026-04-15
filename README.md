@@ -90,11 +90,6 @@ ADMIN
 <img width="1793" height="815" alt="Screenshot 2026-04-15 121647" src="https://github.com/user-attachments/assets/d0904906-0de3-4b0e-bb89-772d8a9fa612" />
 
 
-
-
-
----
-
 ## ⚙️ Quick Setup
 
 1. **Clone the repo**
