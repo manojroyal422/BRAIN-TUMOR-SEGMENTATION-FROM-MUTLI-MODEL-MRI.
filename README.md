@@ -149,19 +149,16 @@ LOgING PAGE
 ### 👤 User Dashboard
 ![User Dashboard](https://github.com/user-attachments/assets/6e2024ef-c7d3-436b-96d3-68d720685eb1)
 
+## 📈 Demo Screenshots
+
+### 🔐 Login Page
+![Login](https://github.com/user-attachments/assets/cf7ffc39-abca-4b58-b63a-3f673c5b697d)
+
+### 👤 User Dashboard
+![User Dashboard](https://github.com/user-attachments/assets/6e2024ef-c7d3-436b-96d3-68d720685eb1)
+
 ### 📤 Upload Data
 ![Upload](https://github.com/user-attachments/assets/53f4232f-d58c-45ce-9a9f-c9cadd62da40)
-
-### 📊 Output
-![Output1](https://github.com/user-attachments/assets/4bc5795a-3319-4f7a-a5a1-5fcb24871953)
-![Output2](https://github.com/user-attachments/assets/94ae691b-0c9b-46d7-9087-61eb3a114e46)
-
-### 📈 Graph
-![Graph](https://github.com/user-attachments/assets/3c0a2ed9-636a-4fab-bcb3-d509093dea45)
-
-### 📥 Download
-![Download](https://github.com/user-attachments/assets/b41a5420-7826-4fce-851d-b0575dabd501)
----
 
 ## 🔍 Model Performance
 
