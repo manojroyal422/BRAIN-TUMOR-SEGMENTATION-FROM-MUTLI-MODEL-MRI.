@@ -69,7 +69,8 @@ brainai/
 ```MODEL PUT
 LOgING PAGE
 
-<img width="757" height="869" alt="Screenshot 2026-04-13 225034" src="https://github.com/user-attachments/assets/87a5ebec-b25c-42e8-abc8-fd982da887ec" />
+<img width="757" height="869" alt="Screenshot 2026-04-13 225034" src="https://github.com/user-attachments/assets/cf7ffc39-abca-4b58-b63a-3f673c5b697d" />
+
 USER LOGIN <img width="1824" height="820" alt="Screenshot 2026-04-13 225100" src="https://github.com/user-attachments/assets/6e2024ef-c7d3-436b-96d3-68d720685eb1" />
 UPLOAD DATA
 <img width="1764" height="741" alt="Screenshot 2026-04-15 122623" src="https://github.com/user-attachments/assets/53f4232f-d58c-45ce-9a9f-c9cadd62da40" />
