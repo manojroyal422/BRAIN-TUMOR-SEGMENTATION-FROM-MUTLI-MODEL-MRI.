@@ -1,10 +1,10 @@
 # BRAINAI – Brain Tumor Segmentation Portal
 
-BRAINAI is a Flask-based brain tumor segmentation platform for multimodal MRI analysis. It uses a pretrained 3D U-Net model to analyze FLAIR, T1, T1c, and T2 MRI volumes and generate segmentation masks, overlay images, confidence maps, and slice-wise tumor activity graphs. The system also supports report sharing to doctors with timestamped activity tracking. [web:239][web:242][web:244]
+BRAINAI is a Flask-based brain tumor segmentation platform for multimodal MRI analysis. It uses a pretrained 3D U-Net model to analyze FLAIR, T1, T1c, and T2 MRI volumes and generate segmentation masks, overlay images, confidence maps, and slice-wise tumor activity graphs. The system also supports report sharing to doctors with timestamped activity tracking. 
 
 ## Overview
 
-This application is designed for automated brain tumor segmentation and report generation in a web interface. Users can upload four MRI modalities in the correct order, run inference, review the results, and send the final report to a doctor. The admin dashboard provides user management, message monitoring, and report history. [web:239][web:242][web:244]
+This application is designed for automated brain tumor segmentation and report generation in a web interface. Users can upload four MRI modalities in the correct order, run inference, review the results, and send the final report to a doctor. The admin dashboard provides user management, message monitoring, and report history. 
 
 ---
 
@@ -19,7 +19,7 @@ This application is designed for automated brain tumor segmentation and report g
 - User dashboard for prediction and report submission.
 - Admin dashboard for managing users, messages, and report records.
 - Report history with doctor name, doctor email, status, and sent date/time.
-- Secure login with role-based access. [web:238][web:242][web:244]
+- Secure login with role-based access.
 
 ---
 
@@ -39,7 +39,7 @@ graph TB
 - Medical imaging: NiBabel, NIfTI files.
 - Database: SQLite.
 - Frontend: HTML, CSS, JavaScript.
-- Visualization: Matplotlib-generated overlays and graphs. [web:239][web:244]
+- Visualization: Matplotlib-generated overlays and graphs.
 
 ---
 
@@ -66,7 +66,7 @@ brainai/
     └── activity.html
 ```
 
-This structure keeps prediction, database logic, and templates separated, which makes the app easier to maintain and extend. [web:243][web:244]
+This structure keeps prediction, database logic, and templates separated, which makes the app easier to maintain and extend. 
 
 ---
 
@@ -107,7 +107,7 @@ pip install -r requirements.txt
 python db.py
 ```
 
-This creates the required tables for users, messages, and reports. [web:243][web:244]
+This creates the required tables for users, messages, and reports. 
 
 ### 5. Add the trained model
 
@@ -142,7 +142,7 @@ http://localhost:5000
 3. Run the prediction.
 4. Review segmentation overlays, confidence heatmap, and slice graph.
 5. Enter doctor details and send the report.
-6. View report status and sent timestamp in the dashboard history. [web:239][web:242][web:244]
+6. View report status and sent timestamp in the dashboard history.
 
 ---
 
@@ -152,7 +152,7 @@ http://localhost:5000
 2. Approve or promote users.
 3. Monitor messages.
 4. Review recent report activity.
-5. Check when each report was sent and to whom. [web:242][web:244]
+5. Check when each report was sent and to whom. 
 
 ---
 
@@ -167,7 +167,7 @@ Each report should store the following fields:
 - Confidence score.
 - Tumor voxel count.
 - Report status.
-- Report sent date/time. [web:242][web:244]
+- Report sent date/time.
 
 A typical report entry should look like this:
 
@@ -229,7 +229,7 @@ CREATE TABLE IF NOT EXISTS reports (
 );
 ```
 
-This makes the database more suitable for tracking clinical workflow and report history. [web:242][web:244]
+This makes the database more suitable for tracking clinical workflow and report history.
 
 ---
 
@@ -250,7 +250,7 @@ Use this in the user dashboard after prediction:
 </form>
 ```
 
-This turns the dashboard into a usable report-sharing workflow rather than just a prediction screen. [web:242][web:244]
+This turns the dashboard into a usable report-sharing workflow rather than just a prediction screen.
 
 ---
 
@@ -291,7 +291,7 @@ Replace the placeholder activity card with a proper report history table:
 {% endif %}
 ```
 
-This is better than a placeholder because it provides an audit trail with dates and recipients. [web:238][web:242][web:244]
+This is better than a placeholder because it provides an audit trail with dates and recipients. 
 
 ---
 
@@ -329,8 +329,7 @@ Use these cleaner labels in your README:
 <img width="1793" height="815" alt="Screenshot 2026-04-15 121647" src="https://github.com/user-attachments/assets/14a6275d-c2bb-465d-b385-a018182df0e5" />
 <img width="1778" height="866" alt="Screenshot 2026-04-15 121629" src="https://github.com/user-attachments/assets/2850db97-589e-43fc-9ec0-e9ac55ac0249" />
 
-- Report Activity Log. [web:242][web:244]
-
+- Report Activity Log.
 ---
 
 ## Recommended Notes
@@ -339,7 +338,7 @@ Use these cleaner labels in your README:
 - Accept only `.nii` and `.nii.gz` files.
 - Save the report timestamp when sending to the doctor.
 - Show sent vs pending status clearly.
-- Use consistent medical terminology across the app. [web:239][web:242][web:244]
+- Use consistent medical terminology across the app. ]
 
 ---
 
