@@ -1040,229 +1040,168 @@ Your BRAINAI platform is now ready for AI-powered brain tumor segmentation.
 ⭐ If this project helped you, consider giving it a star on GitHub.
 
 </div>
-
----
 # 📸 Application Showcase
 
 <div align="center">
 
-# 🏥 BRAINAI User Experience
+# 🏥 BRAINAI Dashboard Showcase
 
-### AI-Powered Brain Tumor Segmentation Platform
-
-> From MRI Upload → AI Prediction → Clinical Report
+**End-to-End AI Brain Tumor Segmentation Platform**
 
 </div>
 
 ---
 
-# 🌟 User Journey
+## 🔐 Authentication Portal
 
-```text
-👤 Login
-      │
-      ▼
-📂 Upload MRI
-      │
-      ▼
-🧠 AI Analysis
-      │
-      ▼
-📊 Visualization
-      │
-      ▼
-📄 Report
-      │
-      ▼
-📧 Doctor
-```
+<p align="center">
+<img width="900" src="https://github.com/user-attachments/assets/466370dc-a5e4-4827-a6bd-d58fd2b98a06">
+</p>
+
+Secure login with role-based authentication for Patients and Administrators.
 
 ---
 
-# 🔐 Authentication Portal
+## 🏥 Patient Dashboard
 
-<div align="center">
+<p align="center">
+<img width="1000" src="https://github.com/user-attachments/assets/f39d243c-f921-4b14-88d0-d8f49f00d413">
+</p>
 
-<img src="YOUR_LOGIN_IMAGE_LINK" width="90%">
+Upload four MRI modalities:
 
-### Secure Authentication
+- ✅ FLAIR
+- ✅ T1
+- ✅ T1CE
+- ✅ T2
 
-Role-based login for Patients and Administrators with session management.
-
-</div>
-
----
-
-# 🏥 Patient Dashboard
-
-<div align="center">
-
-<img src="YOUR_DASHBOARD_IMAGE_LINK" width="95%">
-
-### MRI Upload Workspace
-
-Supports uploading:
-
-✅ FLAIR
-
-✅ T1
-
-✅ T1CE
-
-✅ T2
-
-Automatic validation ensures the correct modality order before AI inference.
-
-</div>
+The application validates the upload order before running AI inference.
 
 ---
 
-# 🧠 AI Segmentation Results
+## 🧠 AI Segmentation Results
 
-<div align="center">
-
-<img src="YOUR_RESULT_IMAGE_LINK" width="95%">
-
-### AI Prediction Dashboard
+<p align="center">
+<img width="1000" src="https://github.com/user-attachments/assets/fab4bb24-5c20-4831-b7bc-1714a3681f57">
+</p>
 
 Generated automatically:
 
-- Brain Tumor Mask
+- Brain Tumor Segmentation
 - Tumor Overlay
 - Prediction Confidence
 - Tumor Volume
 - AI Diagnosis
 
-</div>
+---
+
+## 🔥 Confidence Heatmap
+
+<p align="center">
+<img width="1000" src="https://github.com/user-attachments/assets/d613f51c-00ad-402e-bd55-49d366d13ee0">
+</p>
+
+The confidence heatmap highlights the model's prediction certainty, improving result interpretability.
 
 ---
 
-# 🔥 Confidence Heatmap
+## 📈 Slice-wise Tumor Analysis
 
-<div align="center">
+<p align="center">
+<img width="1000" src="https://github.com/user-attachments/assets/546902ec-e09f-4e46-a32c-2e062585ccaf">
+</p>
 
-<img src="YOUR_HEATMAP_IMAGE_LINK" width="95%">
-
-### Explainable AI
-
-Heatmap visualization highlights regions where the model has the highest prediction confidence, helping clinicians interpret the segmentation.
-
-</div>
+Visualizes tumor distribution across MRI slices.
 
 ---
 
-# 📈 Slice-wise Tumor Analysis
+## 📥 Output Download Center
 
-<div align="center">
+<p align="center">
+<img width="1000" src="https://github.com/user-attachments/assets/d24c7a12-a1f3-4b19-a6b7-2fbfc8cafbd2">
+</p>
 
-<img src="YOUR_GRAPH_IMAGE_LINK" width="95%">
-
-### Tumor Distribution Graph
-
-Displays tumor activity across MRI slices, making it easier to understand spatial progression.
-
-</div>
-
----
-
-# 📥 Output Download Center
-
-<div align="center">
-
-<img src="YOUR_DOWNLOAD_IMAGE_LINK" width="95%">
-
-### Export Results
-
-Available outputs:
+Download:
 
 - Segmentation Mask
-- Overlay Image
+- Overlay
 - Heatmap
-- Slice Graph
+- Tumor Graph
 - Medical Report
 
-</div>
+---
+
+## 🩺 Patient Medical History
+
+<p align="center">
+<img width="1000" src="https://github.com/user-attachments/assets/ed3e8a5f-6715-42ac-aa7d-aa5ec69c9dda">
+</p>
+
+View previous predictions, timestamps, doctor information, and report status.
 
 ---
 
-# 🩺 Patient History
+## 👤 User Profile
 
-<div align="center">
+<p align="center">
+<img width="900" src="https://github.com/user-attachments/assets/39e33aa0-8cd7-4bd8-b4c3-42674eb408a5">
+</p>
 
-<img src="YOUR_HISTORY_IMAGE_LINK" width="95%">
-
-### Historical Predictions
-
-Track previous analyses, report status, timestamps, and doctor interactions.
-
-</div>
+Manage personal information and account settings.
 
 ---
 
-# 👤 User Profile
+## 🛡️ Administrator Dashboard
 
-<div align="center">
+<p align="center">
 
-<img src="YOUR_PROFILE_IMAGE_LINK" width="90%">
+<img width="1000" src="https://github.com/user-attachments/assets/8fa4bc0b-8388-43da-afe8-83e5a3d92c22">
 
-### Profile Management
+<br><br>
 
-Manage account details, contact information, and activity.
+<img width="1000" src="https://github.com/user-attachments/assets/14a6275d-c2bb-465d-b385-a018182df0e5">
 
-</div>
+<br><br>
 
----
+<img width="1000" src="https://github.com/user-attachments/assets/2850db97-589e-43fc-9ec0-e9ac55ac0249">
 
-# 🛡️ Administrator Dashboard
+</p>
 
-<div align="center">
-
-<img src="YOUR_ADMIN_IMAGE_LINK" width="95%">
-
-### Central Management Console
-
-Features include:
+Administrator Features:
 
 - User Management
-- Activity Monitoring
+- Patient Monitoring
 - Report Tracking
 - Doctor Records
-- System Overview
-
-</div>
+- Activity Logs
 
 ---
 
-# 📄 Report Activity
+## 📄 Report Activity
 
-<div align="center">
+The platform stores:
 
-<img src="YOUR_REPORT_IMAGE_LINK" width="95%">
-
-### Medical Report Tracking
-
-Every generated report stores:
-
-- Patient
-- Doctor
-- Prediction
-- Confidence
-- Timestamp
-- Delivery Status
-
-</div>
+| Field | Description |
+|--------|-------------|
+| Patient | Registered User |
+| Doctor | Assigned Doctor |
+| Prediction | Tumor / No Tumor |
+| Confidence | AI Confidence |
+| Tumor Volume | Estimated Size |
+| Timestamp | Report Date |
+| Status | Sent / Pending |
 
 ---
 
 # 🎯 AI Output Summary
 
-| Feature | Output |
-|----------|---------|
-| 🧠 Segmentation | ✅ |
-| 🔥 Heatmap | ✅ |
-| 📊 Slice Graph | ✅ |
+| Feature | Available |
+|----------|-----------|
+| 🧠 Brain Tumor Segmentation | ✅ |
+| 🔥 Confidence Heatmap | ✅ |
+| 📈 Slice Graph | ✅ |
 | 📄 Medical Report | ✅ |
-| 📧 Doctor Sharing | ✅ |
+| 📧 Doctor Report Sharing | ✅ |
 | 🗂 Patient History | ✅ |
 | 🛡 Admin Dashboard | ✅ |
 
@@ -1274,38 +1213,34 @@ Every generated report stores:
 flowchart LR
 
 A[Patient Login]
---> B[MRI Upload]
+--> B[Upload MRI]
 --> C[Preprocessing]
---> D[3D U-Net]
---> E[Segmentation]
+--> D[3D U-Net Inference]
+--> E[Tumor Segmentation]
 --> F[Visualization]
 --> G[Medical Report]
---> H[Doctor]
+--> H[Doctor Review]
 ```
 
 ---
 
 # 💡 Why BRAINAI?
 
-<div align="center">
-
 | Feature | Benefit |
 |----------|----------|
-| 🧠 AI-powered segmentation | Faster diagnosis support |
-| 📊 Interactive visualizations | Better clinical interpretation |
-| 📄 Automated reporting | Reduced manual effort |
-| 📧 Doctor sharing | Streamlined collaboration |
-| 🛡 Role-based access | Secure workflows |
-| 🗂 Patient history | Long-term monitoring |
-
-</div>
+| 🧠 AI-powered Segmentation | Accurate Tumor Detection |
+| 📊 Interactive Visualization | Better Clinical Interpretation |
+| 📄 Automated Reports | Faster Diagnosis Support |
+| 📧 Doctor Sharing | Easy Collaboration |
+| 🛡 Secure Authentication | Protected Patient Data |
+| 🗂 Patient History | Long-term Monitoring |
 
 ---
 
 <div align="center">
 
-## ⭐ Experience the Complete AI Workflow
+## ⭐ Complete AI Workflow
 
-**MRI Upload → AI Segmentation → Explainable Visualization → Clinical Reporting**
+**MRI Upload → AI Prediction → Visualization → Medical Report → Doctor Review**
 
 </div>
