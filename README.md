@@ -158,53 +158,59 @@ Overlay Images
 
 </div>
 
----
 # 🏗️ System Architecture
 
 <div align="center">
 
-## BRAINAI Architecture Overview
+## ⚡ Enterprise AI Architecture
 
 ```mermaid
 flowchart LR
 
-User((👨‍⚕️ Patient))
+subgraph Client
+A[👨‍⚕️ Patient]
+B[👨‍⚕️ Doctor]
+C[🛡️ Admin]
+end
 
-User --> Login
+subgraph Frontend
+D[🌐 Flask Web Portal]
+E[🔐 Authentication]
+F[📤 MRI Upload]
+end
 
-Login --> Upload
+subgraph Backend
+G[⚙️ Prediction Engine]
+H[🧠 3D U-Net Model]
+I[📊 Visualization]
+J[📄 Report Generator]
+end
 
-Upload --> Validation
+subgraph Storage
+K[(SQLite)]
+L[(MRI Files)]
+end
 
-Validation --> Preprocessing
+A --> D
+B --> D
+C --> D
 
-Preprocessing --> AIModel
+D --> E
+E --> F
 
-AIModel --> Prediction
+F --> G
 
-Prediction --> PostProcessing
+G --> H
 
-PostProcessing --> Overlay
+H --> I
 
-PostProcessing --> Heatmap
+I --> J
 
-PostProcessing --> SliceGraph
+J --> K
 
-Overlay --> Report
+F --> L
 
-Heatmap --> Report
-
-SliceGraph --> Report
-
-Report --> Database
-
-Database --> Dashboard
-
-Dashboard --> Doctor
-
-Doctor --> Email
-
-Email --> History
+J --> B
 ```
 
 </div>
@@ -213,10 +219,12 @@ Email --> History
 
 # 🧠 AI Inference Pipeline
 
-```mermaid
-graph TD
+<div align="center">
 
-A[Upload MRI Files]
+```mermaid
+flowchart TD
+
+A[📂 Upload MRI Files]
 
 A --> B[FLAIR]
 
@@ -226,7 +234,7 @@ A --> D[T1CE]
 
 A --> E[T2]
 
-B --> F
+B --> F[Load Images]
 
 C --> F
 
@@ -234,198 +242,185 @@ D --> F
 
 E --> F
 
-F[Load NIfTI Images]
+F --> G[Normalize]
 
-↓
+G --> H[Resize]
 
-Normalize
+H --> I[Stack Channels]
 
-↓
+I --> J[Patch Generator]
 
-Resize
+J --> K[3D U-Net]
 
-↓
+K --> L[Segmentation]
 
-Stack 4 Channels
+L --> M[Overlay]
 
-↓
+M --> N[Heatmap]
 
-Patch Extraction
+N --> O[Tumor Graph]
 
-↓
+O --> P[Medical Report]
 
-3D U-Net
+P --> Q[(Database)]
 
-↓
-
-Tumor Prediction
-
-↓
-
-Voxel Classification
-
-↓
-
-Segmentation Mask
-
-↓
-
-Overlay Generation
-
-↓
-
-Confidence Heatmap
-
-↓
-
-Slice Analysis
-
-↓
-
-Medical Report
+Q --> R[Doctor Portal]
 ```
-
----
-
-# 🔬 Deep Learning Workflow
-
-<div align="center">
-
-| Stage | Description |
-|---------|-------------|
-| MRI Acquisition | Four MRI Modalities |
-| Data Loading | NiBabel |
-| Preprocessing | Normalization |
-| Patch Extraction | 128×128×128 |
-| AI Model | 3D U-Net |
-| Prediction | Multi-class Segmentation |
-| Post Processing | Overlay + Statistics |
-| Report Generation | PDF + Images |
 
 </div>
 
 ---
 
+# 🧠 Deep Learning Workflow
+
+```mermaid
+flowchart LR
+
+A[MRI Dataset]
+
+-->
+
+B[Preprocessing]
+
+-->
+
+C[Normalization]
+
+-->
+
+D[Patch Extraction]
+
+-->
+
+E[3D U-Net]
+
+-->
+
+F[Prediction]
+
+-->
+
+G[Post Processing]
+
+-->
+
+H[Visualization]
+
+-->
+
+I[Medical Report]
+```
+
+---
+
 # ⚙️ Prediction Workflow
 
-```text
+```mermaid
+flowchart TD
 
-Patient Upload
+A[Patient Login]
 
-↓
+-->
 
-Validate MRI Order
+B[Upload MRI]
 
-↓
+-->
 
-Load MRI Volumes
+C[Validate MRI]
 
-↓
+-->
 
-Convert to NumPy Arrays
+D[Load Images]
 
-↓
+-->
 
-Normalize Intensity
+E[Normalize]
 
-↓
+-->
 
-Stack Modalities
+F[Generate Patches]
 
-↓
+-->
 
-Patch Generation
+G[AI Prediction]
 
-↓
+-->
 
-Run 3D U-Net
+H[Tumor Mask]
 
-↓
+-->
 
-Generate Tumor Mask
+I[Confidence]
 
-↓
+-->
 
-Compute Tumor Volume
+J[Overlay]
 
-↓
+-->
 
-Generate Confidence Heatmap
+K[Slice Graph]
 
-↓
+-->
 
-Generate Slice-wise Graph
+L[Medical Report]
 
-↓
+-->
 
-Create Medical Report
-
-↓
-
-Store History
-
-↓
-
-Send to Doctor
+M[Send to Doctor]
 ```
 
 ---
 
 # 🧠 3D U-Net Architecture
 
-```text
+```mermaid
+flowchart TD
 
-Input Volume
+A[Input MRI Volume]
 
-(4 MRI Channels)
+-->
 
-↓
+B[Encoder]
 
-Encoder
+-->
 
-↓
+C[Conv3D]
 
-Conv3D
+-->
 
-↓
+D[BatchNorm]
 
-BatchNorm
+-->
 
-↓
+E[ReLU]
 
-ReLU
+-->
 
-↓
+F[MaxPooling]
 
-MaxPool
+-->
 
-↓
+G[Bottleneck]
 
-Bottleneck
+-->
 
-↓
+H[Decoder]
 
-Decoder
+-->
 
-↓
+I[Skip Connections]
 
-Skip Connections
+-->
 
-↓
+J[Conv3D]
 
-Conv3D
+-->
 
-↓
+K[Softmax]
 
-Segmentation Layer
+-->
 
-↓
-
-Softmax
-
-↓
-
-Tumor Classes
+L[Tumor Mask]
 ```
 
 ---
@@ -433,118 +428,100 @@ Tumor Classes
 # 📊 AI Processing Pipeline
 
 ```mermaid
+flowchart LR
 
-flowchart TD
+A[MRI]
 
-MRI
+-->
 
-↓
+B[Image Loader]
 
-Image Loading
+-->
 
-↓
+C[Preprocessing]
 
-Preprocessing
+-->
 
-↓
+D[TensorFlow]
 
-Data Normalization
+-->
 
-↓
+E[Prediction]
 
-Patch Generator
+-->
 
-↓
+F[Visualization]
 
-3D U-Net
+-->
 
-↓
+G[Database]
 
-Prediction
+-->
 
-↓
-
-Post Processing
-
-↓
-
-Visualization
-
-↓
-
-Medical Report
-
-↓
-
-Database Storage
-
-↓
-
-Doctor Portal
+H[Doctor Dashboard]
 ```
 
 ---
 
-# 🗂️ Component Architecture
+# 🗂️ Software Modules
+
+| Module | Description |
+|---------|-------------|
+| 🔐 Authentication | Secure Login & Registration |
+| 📂 MRI Upload | Upload 4 MRI Modalities |
+| 🧠 AI Engine | 3D U-Net Segmentation |
+| 📊 Visualization | Overlay + Heatmap |
+| 📈 Analytics | Slice-wise Tumor Graph |
+| 📄 Report | Doctor Report Generation |
+| 💾 Database | Patient History |
+| 🛡️ Admin | User & Activity Management |
+
+---
+
+# 📂 System Components
 
 ```mermaid
+graph LR
 
-graph TB
+A[Frontend]
 
-Frontend
+-->
 
-↓
+B[Flask]
 
-Flask
+-->
 
-↓
+C[Authentication]
 
-Authentication
+-->
 
-↓
+D[Prediction Service]
 
-Prediction Service
+-->
 
-↓
+E[TensorFlow]
 
-AI Engine
+-->
 
-↓
+F[SQLite]
 
-TensorFlow
+-->
 
-↓
+G[Report Generator]
 
-SQLite
+-->
 
-↓
-
-Doctor Portal
+H[Doctor Dashboard]
 ```
 
 ---
 
-# 🧩 Software Modules
-
-| Module | Responsibility |
-|----------|----------------|
-| Authentication | Login & Registration |
-| Upload Manager | MRI Upload |
-| AI Engine | 3D U-Net Prediction |
-| Visualization | Overlay + Heatmap |
-| Analytics | Slice Graph |
-| Report Module | PDF & Doctor Sharing |
-| Database | Patient History |
-| Admin Dashboard | User Management |
-
----
-
-# 🔄 End-to-End Workflow
+# 🔄 End-to-End Clinical Workflow
 
 ```mermaid
 sequenceDiagram
 
-participant Patient
+actor Patient
 
 participant Flask
 
@@ -554,57 +531,73 @@ participant Database
 
 participant Doctor
 
+Patient->>Flask: Login
+
 Patient->>Flask: Upload MRI
 
-Flask->>AI: Run Prediction
+Flask->>AI: Preprocess Images
 
 AI-->>Flask: Segmentation
 
 Flask->>Database: Save Report
 
-Flask->>Doctor: Email Report
+Flask->>Doctor: Send Report
 
-Doctor-->>Patient: Diagnosis
+Doctor-->>Patient: Review Diagnosis
 ```
 
 ---
 
-# 📌 MRI Input Requirements
+# 📌 MRI Input Specification
 
-| MRI | Required | Format |
-|------|----------|---------|
-| FLAIR | ✅ | .nii |
-| T1 | ✅ | .nii |
-| T1CE | ✅ | .nii |
-| T2 | ✅ | .nii |
+| MRI Modality | Required | Format |
+|--------------|----------|---------|
+| FLAIR | ✅ | .nii / .nii.gz |
+| T1 | ✅ | .nii / .nii.gz |
+| T1CE | ✅ | .nii / .nii.gz |
+| T2 | ✅ | .nii / .nii.gz |
 
 ---
 
-# 🎯 Output Generated
+# 🎯 Generated Outputs
 
-✅ Segmentation Mask
-
-✅ Tumor Overlay
-
-✅ Confidence Heatmap
-
-✅ Slice-wise Tumor Graph
-
-✅ Tumor Volume
-
-✅ Prediction Confidence
-
-✅ Medical Report
-
-✅ Report History
+| Output | Description |
+|---------|-------------|
+| 🧠 Tumor Mask | AI Segmentation Output |
+| 🖼 Overlay | MRI + Tumor Overlay |
+| 🔥 Heatmap | Confidence Visualization |
+| 📈 Slice Graph | Tumor Distribution |
+| 📄 Medical Report | AI Diagnosis |
+| 💾 Database Record | Patient History |
+| 📧 Doctor Report | Email Sharing |
 
 ---
 
 <div align="center">
 
-## ⚡ Enterprise AI Pipeline
+# 🚀 Enterprise AI Workflow
 
-Medical Imaging → Deep Learning → Explainable AI → Clinical Report
+```text
+MRI Upload
+    │
+    ▼
+Preprocessing
+    │
+    ▼
+3D U-Net AI
+    │
+    ▼
+Segmentation
+    │
+    ▼
+Visualization
+    │
+    ▼
+Medical Report
+    │
+    ▼
+Doctor Portal
+```
 
 </div>
 
