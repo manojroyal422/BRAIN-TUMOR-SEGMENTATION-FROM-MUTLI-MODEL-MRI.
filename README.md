@@ -159,3 +159,453 @@ Overlay Images
 </div>
 
 ---
+# 🏗️ System Architecture
+
+<div align="center">
+
+## BRAINAI Architecture Overview
+
+```mermaid
+flowchart LR
+
+User((👨‍⚕️ Patient))
+
+User --> Login
+
+Login --> Upload
+
+Upload --> Validation
+
+Validation --> Preprocessing
+
+Preprocessing --> AIModel
+
+AIModel --> Prediction
+
+Prediction --> PostProcessing
+
+PostProcessing --> Overlay
+
+PostProcessing --> Heatmap
+
+PostProcessing --> SliceGraph
+
+Overlay --> Report
+
+Heatmap --> Report
+
+SliceGraph --> Report
+
+Report --> Database
+
+Database --> Dashboard
+
+Dashboard --> Doctor
+
+Doctor --> Email
+
+Email --> History
+```
+
+</div>
+
+---
+
+# 🧠 AI Inference Pipeline
+
+```mermaid
+graph TD
+
+A[Upload MRI Files]
+
+A --> B[FLAIR]
+
+A --> C[T1]
+
+A --> D[T1CE]
+
+A --> E[T2]
+
+B --> F
+
+C --> F
+
+D --> F
+
+E --> F
+
+F[Load NIfTI Images]
+
+↓
+
+Normalize
+
+↓
+
+Resize
+
+↓
+
+Stack 4 Channels
+
+↓
+
+Patch Extraction
+
+↓
+
+3D U-Net
+
+↓
+
+Tumor Prediction
+
+↓
+
+Voxel Classification
+
+↓
+
+Segmentation Mask
+
+↓
+
+Overlay Generation
+
+↓
+
+Confidence Heatmap
+
+↓
+
+Slice Analysis
+
+↓
+
+Medical Report
+```
+
+---
+
+# 🔬 Deep Learning Workflow
+
+<div align="center">
+
+| Stage | Description |
+|---------|-------------|
+| MRI Acquisition | Four MRI Modalities |
+| Data Loading | NiBabel |
+| Preprocessing | Normalization |
+| Patch Extraction | 128×128×128 |
+| AI Model | 3D U-Net |
+| Prediction | Multi-class Segmentation |
+| Post Processing | Overlay + Statistics |
+| Report Generation | PDF + Images |
+
+</div>
+
+---
+
+# ⚙️ Prediction Workflow
+
+```text
+
+Patient Upload
+
+↓
+
+Validate MRI Order
+
+↓
+
+Load MRI Volumes
+
+↓
+
+Convert to NumPy Arrays
+
+↓
+
+Normalize Intensity
+
+↓
+
+Stack Modalities
+
+↓
+
+Patch Generation
+
+↓
+
+Run 3D U-Net
+
+↓
+
+Generate Tumor Mask
+
+↓
+
+Compute Tumor Volume
+
+↓
+
+Generate Confidence Heatmap
+
+↓
+
+Generate Slice-wise Graph
+
+↓
+
+Create Medical Report
+
+↓
+
+Store History
+
+↓
+
+Send to Doctor
+```
+
+---
+
+# 🧠 3D U-Net Architecture
+
+```text
+
+Input Volume
+
+(4 MRI Channels)
+
+↓
+
+Encoder
+
+↓
+
+Conv3D
+
+↓
+
+BatchNorm
+
+↓
+
+ReLU
+
+↓
+
+MaxPool
+
+↓
+
+Bottleneck
+
+↓
+
+Decoder
+
+↓
+
+Skip Connections
+
+↓
+
+Conv3D
+
+↓
+
+Segmentation Layer
+
+↓
+
+Softmax
+
+↓
+
+Tumor Classes
+```
+
+---
+
+# 📊 AI Processing Pipeline
+
+```mermaid
+
+flowchart TD
+
+MRI
+
+↓
+
+Image Loading
+
+↓
+
+Preprocessing
+
+↓
+
+Data Normalization
+
+↓
+
+Patch Generator
+
+↓
+
+3D U-Net
+
+↓
+
+Prediction
+
+↓
+
+Post Processing
+
+↓
+
+Visualization
+
+↓
+
+Medical Report
+
+↓
+
+Database Storage
+
+↓
+
+Doctor Portal
+```
+
+---
+
+# 🗂️ Component Architecture
+
+```mermaid
+
+graph TB
+
+Frontend
+
+↓
+
+Flask
+
+↓
+
+Authentication
+
+↓
+
+Prediction Service
+
+↓
+
+AI Engine
+
+↓
+
+TensorFlow
+
+↓
+
+SQLite
+
+↓
+
+Doctor Portal
+```
+
+---
+
+# 🧩 Software Modules
+
+| Module | Responsibility |
+|----------|----------------|
+| Authentication | Login & Registration |
+| Upload Manager | MRI Upload |
+| AI Engine | 3D U-Net Prediction |
+| Visualization | Overlay + Heatmap |
+| Analytics | Slice Graph |
+| Report Module | PDF & Doctor Sharing |
+| Database | Patient History |
+| Admin Dashboard | User Management |
+
+---
+
+# 🔄 End-to-End Workflow
+
+```mermaid
+sequenceDiagram
+
+participant Patient
+
+participant Flask
+
+participant AI
+
+participant Database
+
+participant Doctor
+
+Patient->>Flask: Upload MRI
+
+Flask->>AI: Run Prediction
+
+AI-->>Flask: Segmentation
+
+Flask->>Database: Save Report
+
+Flask->>Doctor: Email Report
+
+Doctor-->>Patient: Diagnosis
+```
+
+---
+
+# 📌 MRI Input Requirements
+
+| MRI | Required | Format |
+|------|----------|---------|
+| FLAIR | ✅ | .nii |
+| T1 | ✅ | .nii |
+| T1CE | ✅ | .nii |
+| T2 | ✅ | .nii |
+
+---
+
+# 🎯 Output Generated
+
+✅ Segmentation Mask
+
+✅ Tumor Overlay
+
+✅ Confidence Heatmap
+
+✅ Slice-wise Tumor Graph
+
+✅ Tumor Volume
+
+✅ Prediction Confidence
+
+✅ Medical Report
+
+✅ Report History
+
+---
+
+<div align="center">
+
+## ⚡ Enterprise AI Pipeline
+
+Medical Imaging → Deep Learning → Explainable AI → Clinical Report
+
+</div>
+
+---
