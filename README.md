@@ -1797,3 +1797,176 @@ title BRAINAI Roadmap
 </div>
 
 ---
+# 🚀 Demo & Quick Links
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/manojroyal422)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Manoj_Royal-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/YOUR-LINKEDIN)
+
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python)]
+
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow)]
+
+[![Flask](https://img.shields.io/badge/Flask-Web_App-000000?style=for-the-badge&logo=flask)]
+
+</div>
+
+---
+
+# 🎥 Demo
+
+> Add a short screen recording or GIF here showing:
+>
+> 1. Login
+> 2. MRI upload
+> 3. AI prediction
+> 4. Segmentation result
+> 5. Report generation
+
+<p align="center">
+
+<img width="900" src="YOUR_DEMO_GIF_URL"/>
+
+</p>
+
+---
+
+# 📈 Project Highlights
+
+- 🧠 3D U-Net based brain tumor segmentation
+- 🏥 Multimodal MRI support (FLAIR, T1, T1CE, T2)
+- 📊 Explainable AI with overlays and confidence heatmaps
+- 📄 Automated medical report generation
+- 👨‍⚕️ Doctor report sharing workflow
+- 🔐 Secure authentication with role-based access
+- 📚 Patient history and activity tracking
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new branch.
+
+```bash
+git checkout -b feature/your-feature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add your feature"
+```
+
+4. Push the branch.
+
+```bash
+git push origin feature/your-feature
+```
+
+5. Open a Pull Request.
+
+---
+
+# 🐞 Reporting Issues
+
+Found a bug?
+
+Please include:
+
+- Operating System
+- Python Version
+- Error Message
+- Steps to Reproduce
+- Expected Behavior
+- Screenshots (if applicable)
+
+---
+
+# 📚 References
+
+If applicable, list the resources that influenced your implementation:
+
+- TensorFlow Documentation
+- Keras Documentation
+- Flask Documentation
+- NiBabel Documentation
+- Medical imaging literature or datasets (e.g., BraTS) used by your project
+
+---
+
+# 🙏 Acknowledgements
+
+Thanks to the open-source community and the maintainers of:
+
+- TensorFlow
+- Keras
+- Flask
+- NiBabel
+- NumPy
+- Matplotlib
+
+---
+
+# 👨‍💻 Author
+
+<div align="center">
+
+## Manoj Royal
+
+AI / ML Engineer
+
+Interested in:
+
+- Artificial Intelligence
+- Medical Imaging
+- Deep Learning
+- Generative AI
+- Computer Vision
+
+</div>
+
+---
+
+# 📬 Contact
+
+<div align="center">
+
+📧 Email: manojroyal1320@gmail.com
+
+💼 LinkedIn:linkedin.com/in/manoj-royal-270301270
+
+
+🐙 GitHub: https://github.com/manojroyal422
+
+</div>
+
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+⭐ Star the repository
+
+🍴 Fork it
+
+🛠️ Contribute improvements
+
+📢 Share it with others
+
+---
+
+<div align="center">
+
+# 🧠 BRAINAI
+
+### AI for Medical Imaging
+
+Built with ❤️ using Python, Flask, TensorFlow, and Keras.
+
+</div>
