@@ -1938,7 +1938,7 @@ Interested in:
 
 📧 Email: manojroyal1320@gmail.com
 
-💼 LinkedIn:linkedin.com/in/manoj-royal-270301270
+💼 LinkedIn: linkedin.com/in/manoj-royal-270301270
 
 
 🐙 GitHub: https://github.com/manojroyal422
