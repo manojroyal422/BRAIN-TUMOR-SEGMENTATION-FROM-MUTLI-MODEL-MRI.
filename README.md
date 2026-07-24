@@ -1244,3 +1244,202 @@ A[Patient Login]
 **MRI Upload → AI Prediction → Visualization → Medical Report → Doctor Review**
 
 </div>
+# 🧠 Artificial Intelligence Engine
+
+<div align="center">
+
+# Brain Tumor Segmentation using 3D U-Net
+
+**Deep Learning • Medical Imaging • Explainable AI**
+
+<img src="https://img.shields.io/badge/Model-3D_U--Net-red?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Framework-TensorFlow-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Medical-MRI-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Explainable-AI-success?style=for-the-badge"/>
+
+</div>
+
+---
+
+# 🎯 Problem Statement
+
+Brain tumor segmentation is a critical step in clinical diagnosis and treatment planning. Manual delineation of tumor regions from MRI scans is labor-intensive and prone to variability between clinicians.
+
+**BRAINAI** addresses this challenge by leveraging a **3D U-Net convolutional neural network** to automatically segment tumor regions from multimodal MRI data, providing accurate and explainable results through an intuitive web interface.
+
+---
+
+# 🧬 Model Architecture
+
+```mermaid
+flowchart LR
+
+A[Input MRI Volume]
+--> B[Encoder]
+--> C[Bottleneck]
+--> D[Decoder]
+--> E[Segmentation Output]
+
+B -. Skip Connections .-> D
+```
+
+---
+
+# 🩺 MRI Modalities
+
+| MRI Sequence | Purpose |
+|---------------|---------|
+| 🟢 FLAIR | Highlights edema and tumor boundaries |
+| 🔵 T1 | Brain anatomical structure |
+| 🟣 T1CE | Contrast-enhanced tumor regions |
+| 🟠 T2 | Fluid and tissue differentiation |
+
+---
+
+# 🔄 Data Processing Pipeline
+
+```mermaid
+flowchart TD
+
+A[Load MRI]
+--> B[Normalize]
+--> C[Resize]
+--> D[Stack Modalities]
+--> E[Patch Extraction]
+--> F[3D U-Net]
+--> G[Prediction]
+--> H[Post Processing]
+--> I[Visualization]
+```
+
+---
+
+# ⚙️ AI Prediction Workflow
+
+| Step | Operation |
+|------|-----------|
+| 1 | Upload MRI Volumes |
+| 2 | Validate Input Order |
+| 3 | Load NIfTI Files |
+| 4 | Normalize Intensities |
+| 5 | Generate Patches |
+| 6 | Run 3D U-Net |
+| 7 | Produce Segmentation Mask |
+| 8 | Calculate Tumor Volume |
+| 9 | Generate Heatmap |
+| 10 | Build Medical Report |
+
+---
+
+# 📊 Model Performance Metrics
+
+> Replace these values with your actual evaluation results.
+
+| Metric | Value |
+|---------|------:|
+| Dice Score | 0.91 |
+| IoU | 0.86 |
+| Precision | 0.93 |
+| Recall | 0.90 |
+| Accuracy | 97.2% |
+| F1 Score | 0.91 |
+
+---
+
+# 📈 Evaluation Metrics
+
+| Metric | Purpose |
+|---------|---------|
+| Dice Coefficient | Segmentation overlap |
+| IoU | Region similarity |
+| Precision | False Positive control |
+| Recall | Tumor detection sensitivity |
+| F1 Score | Balanced segmentation quality |
+
+---
+
+# 🧠 Tumor Classes
+
+| Class | Description |
+|---------|-------------|
+| Background | Healthy tissue |
+| Edema | Swelling around tumor |
+| Enhancing Tumor | Active tumor |
+| Necrotic Core | Dead tumor tissue |
+
+---
+
+# 📂 Dataset Overview
+
+| Property | Details |
+|----------|---------|
+| MRI Type | Multimodal |
+| File Format | `.nii`, `.nii.gz` |
+| Dimensions | 3D Volumes |
+| Modalities | FLAIR, T1, T1CE, T2 |
+
+> Update this section with your dataset source (e.g., BraTS) if applicable.
+
+---
+
+# 🔬 Explainable AI
+
+BRAINAI enhances transparency by generating:
+
+- 🔥 Confidence Heatmaps
+- 🧠 Tumor Overlay Images
+- 📈 Slice-wise Activity Graphs
+- 📊 Tumor Volume Statistics
+- 📄 AI-generated Medical Reports
+
+These outputs help users interpret model predictions rather than relying on a black-box result.
+
+---
+
+# ⚡ Inference Outputs
+
+| Output | Description |
+|---------|-------------|
+| Segmentation Mask | Binary / multi-class prediction |
+| Overlay | MRI + predicted tumor |
+| Heatmap | Prediction confidence |
+| Slice Graph | Tumor distribution |
+| Tumor Volume | Estimated size |
+| Report | Clinical summary |
+
+---
+
+# 📚 Research References
+
+If your work is based on published research, include references here, for example:
+
+- 3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation
+- BraTS Challenge publications
+- TensorFlow and Keras documentation
+
+Replace these with the exact papers or resources you used.
+
+---
+
+# 🚀 Future Improvements
+
+- 🔬 Multi-class tumor segmentation
+- ☁️ Cloud deployment
+- 📱 Mobile application
+- 🧠 Vision Transformer (ViT) support
+- ⚡ Faster inference optimization
+- 🏥 PACS integration
+- 📄 PDF report export
+- 🤖 LLM-assisted clinical summaries
+
+---
+
+<div align="center">
+
+## 💙 Advancing Medical AI with Explainable Deep Learning
+
+**MRI → AI Segmentation → Visualization → Clinical Insights**
+
+</div>
+
+---
