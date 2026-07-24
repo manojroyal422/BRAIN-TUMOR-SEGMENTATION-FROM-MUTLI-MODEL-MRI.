@@ -602,3 +602,443 @@ Doctor Portal
 </div>
 
 ---
+# 🚀 Quick Start
+
+<div align="center">
+
+> **Get BRAINAI running in less than 5 minutes**
+
+</div>
+
+---
+
+# 📋 Prerequisites
+
+| Requirement | Version | Status |
+|-------------|---------|--------|
+| Python | 3.10+ | ✅ Required |
+| TensorFlow | 2.x | ✅ Required |
+| Git | Latest | ✅ Required |
+| SQLite | Built-in | ✅ Required |
+| RAM | 8 GB+ | ✅ Recommended |
+| GPU (Optional) | CUDA 11+ | 🚀 Recommended |
+
+---
+
+# ⚡ Installation
+
+## Step 1 — Clone Repository
+
+```bash
+git clone https://github.com/yourusername/BRAINAI.git
+
+cd BRAINAI
+```
+
+---
+
+## Step 2 — Create Virtual Environment
+
+### Windows
+
+```powershell
+python -m venv venv
+
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+## Step 3 — Install Dependencies
+
+```bash
+pip install --upgrade pip
+
+pip install -r requirements.txt
+```
+
+---
+
+## Step 4 — Verify Installation
+
+```bash
+python --version
+
+pip list
+```
+
+Expected Output
+
+```
+Python 3.11
+
+TensorFlow
+
+Flask
+
+Nibabel
+
+NumPy
+
+Matplotlib
+```
+
+---
+
+# ⚙️ Project Configuration
+
+## Required Directory
+
+```
+brainai/
+
+│
+
+├── app.py
+
+├── ai_model.py
+
+├── db.py
+
+├── requirements.txt
+
+├── brain_tumor_3DUNet.keras
+
+│
+
+├── static/
+
+│ ├── uploads/
+
+│ ├── results/
+
+│ ├── css/
+
+│ └── js/
+
+│
+
+└── templates/
+```
+
+---
+
+# 📂 Environment Variables
+
+Create
+
+```
+.env
+```
+
+Example
+
+```env
+FLASK_APP=app.py
+
+FLASK_ENV=development
+
+SECRET_KEY=CHANGE_THIS_SECRET_KEY
+
+DATABASE_URL=sqlite:///brainai.db
+
+MODEL_PATH=brain_tumor_3DUNet.keras
+```
+
+---
+
+# 🗄 Database Initialization
+
+Initialize SQLite
+
+```bash
+python db.py
+```
+
+This creates
+
+- Users
+
+- Messages
+
+- Medical Reports
+
+- Report History
+
+- Admin Records
+
+---
+
+# 🧠 AI Model Setup
+
+Place the trained model inside
+
+```
+brain_tumor_3DUNet.keras
+```
+
+Project root
+
+```
+brainai/
+
+brain_tumor_3DUNet.keras
+```
+
+---
+
+# ▶️ Run Application
+
+```bash
+python app.py
+```
+
+Visit
+
+```
+http://localhost:5000
+```
+
+---
+
+# 🧪 Verify AI Pipeline
+
+Upload
+
+✅ FLAIR
+
+↓
+
+✅ T1
+
+↓
+
+✅ T1CE
+
+↓
+
+✅ T2
+
+Run Prediction
+
+Expected Outputs
+
+- Tumor Mask
+
+- Overlay
+
+- Heatmap
+
+- Slice Graph
+
+- Medical Report
+
+---
+
+# 📁 Folder Structure
+
+```text
+brainai/
+│
+├── app.py                     # Flask application
+├── ai_model.py                # AI inference
+├── db.py                      # SQLite operations
+├── requirements.txt
+├── README.md
+├── brain_tumor_3DUNet.keras
+│
+├── static/
+│   ├── uploads/
+│   ├── results/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── templates/
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── prediction.html
+│   ├── admin_dashboard.html
+│   └── report.html
+│
+└── database/
+    └── brainai.db
+```
+
+---
+
+# 🐳 Docker Deployment
+
+## Dockerfile
+
+```dockerfile
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 5000
+
+CMD ["python","app.py"]
+```
+
+---
+
+## Build Image
+
+```bash
+docker build -t brainai .
+```
+
+---
+
+## Run Container
+
+```bash
+docker run -p 5000:5000 brainai
+```
+
+---
+
+# ☁️ Cloud Deployment
+
+Supports
+
+| Platform | Status |
+|----------|--------|
+| AWS EC2 | ✅ |
+| Azure VM | ✅ |
+| Google Cloud | ✅ |
+| Railway | ✅ |
+| Render | ✅ |
+| Docker | ✅ |
+
+---
+
+# 📦 Requirements
+
+```
+Flask
+
+TensorFlow
+
+Keras
+
+NumPy
+
+Nibabel
+
+Matplotlib
+
+Pillow
+
+OpenCV
+
+SQLite3
+```
+
+---
+
+# 🧪 Running Tests
+
+```bash
+pytest
+```
+
+or
+
+```bash
+python tests.py
+```
+
+---
+
+# 🔒 Security Best Practices
+
+- ✅ Validate uploaded files
+
+- ✅ Accept only `.nii` & `.nii.gz`
+
+- ✅ Store passwords securely
+
+- ✅ Restrict Admin Dashboard
+
+- ✅ Validate file size
+
+- ✅ Prevent duplicate uploads
+
+- ✅ Log report activity
+
+- ✅ Protect session cookies
+
+---
+
+# 📊 Project Workflow
+
+```text
+Clone Repository
+        │
+        ▼
+Create Virtual Environment
+        │
+        ▼
+Install Requirements
+        │
+        ▼
+Initialize Database
+        │
+        ▼
+Add AI Model
+        │
+        ▼
+Run Flask Server
+        │
+        ▼
+Upload MRI
+        │
+        ▼
+Generate Prediction
+        │
+        ▼
+Medical Report
+```
+
+---
+
+# ✅ Installation Checklist
+
+| Task | Status |
+|------|--------|
+| Clone Repository | ✅ |
+| Install Dependencies | ✅ |
+| Configure Environment | ✅ |
+| Initialize Database | ✅ |
+| Add AI Model | ✅ |
+| Run Application | ✅ |
+| Verify Prediction | ✅ |
+
+---
+
+<div align="center">
+
+## 🎉 Congratulations!
+
+Your BRAINAI platform is now ready for AI-powered brain tumor segmentation.
+
+⭐ If this project helped you, consider giving it a star on GitHub.
+
+</div>
+
+---
