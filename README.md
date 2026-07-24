@@ -1042,3 +1042,270 @@ Your BRAINAI platform is now ready for AI-powered brain tumor segmentation.
 </div>
 
 ---
+# 📸 Application Showcase
+
+<div align="center">
+
+# 🏥 BRAINAI User Experience
+
+### AI-Powered Brain Tumor Segmentation Platform
+
+> From MRI Upload → AI Prediction → Clinical Report
+
+</div>
+
+---
+
+# 🌟 User Journey
+
+```text
+👤 Login
+      │
+      ▼
+📂 Upload MRI
+      │
+      ▼
+🧠 AI Analysis
+      │
+      ▼
+📊 Visualization
+      │
+      ▼
+📄 Report
+      │
+      ▼
+📧 Doctor
+```
+
+---
+
+# 🔐 Authentication Portal
+
+<div align="center">
+
+<img src="YOUR_LOGIN_IMAGE_LINK" width="90%">
+
+### Secure Authentication
+
+Role-based login for Patients and Administrators with session management.
+
+</div>
+
+---
+
+# 🏥 Patient Dashboard
+
+<div align="center">
+
+<img src="YOUR_DASHBOARD_IMAGE_LINK" width="95%">
+
+### MRI Upload Workspace
+
+Supports uploading:
+
+✅ FLAIR
+
+✅ T1
+
+✅ T1CE
+
+✅ T2
+
+Automatic validation ensures the correct modality order before AI inference.
+
+</div>
+
+---
+
+# 🧠 AI Segmentation Results
+
+<div align="center">
+
+<img src="YOUR_RESULT_IMAGE_LINK" width="95%">
+
+### AI Prediction Dashboard
+
+Generated automatically:
+
+- Brain Tumor Mask
+- Tumor Overlay
+- Prediction Confidence
+- Tumor Volume
+- AI Diagnosis
+
+</div>
+
+---
+
+# 🔥 Confidence Heatmap
+
+<div align="center">
+
+<img src="YOUR_HEATMAP_IMAGE_LINK" width="95%">
+
+### Explainable AI
+
+Heatmap visualization highlights regions where the model has the highest prediction confidence, helping clinicians interpret the segmentation.
+
+</div>
+
+---
+
+# 📈 Slice-wise Tumor Analysis
+
+<div align="center">
+
+<img src="YOUR_GRAPH_IMAGE_LINK" width="95%">
+
+### Tumor Distribution Graph
+
+Displays tumor activity across MRI slices, making it easier to understand spatial progression.
+
+</div>
+
+---
+
+# 📥 Output Download Center
+
+<div align="center">
+
+<img src="YOUR_DOWNLOAD_IMAGE_LINK" width="95%">
+
+### Export Results
+
+Available outputs:
+
+- Segmentation Mask
+- Overlay Image
+- Heatmap
+- Slice Graph
+- Medical Report
+
+</div>
+
+---
+
+# 🩺 Patient History
+
+<div align="center">
+
+<img src="YOUR_HISTORY_IMAGE_LINK" width="95%">
+
+### Historical Predictions
+
+Track previous analyses, report status, timestamps, and doctor interactions.
+
+</div>
+
+---
+
+# 👤 User Profile
+
+<div align="center">
+
+<img src="YOUR_PROFILE_IMAGE_LINK" width="90%">
+
+### Profile Management
+
+Manage account details, contact information, and activity.
+
+</div>
+
+---
+
+# 🛡️ Administrator Dashboard
+
+<div align="center">
+
+<img src="YOUR_ADMIN_IMAGE_LINK" width="95%">
+
+### Central Management Console
+
+Features include:
+
+- User Management
+- Activity Monitoring
+- Report Tracking
+- Doctor Records
+- System Overview
+
+</div>
+
+---
+
+# 📄 Report Activity
+
+<div align="center">
+
+<img src="YOUR_REPORT_IMAGE_LINK" width="95%">
+
+### Medical Report Tracking
+
+Every generated report stores:
+
+- Patient
+- Doctor
+- Prediction
+- Confidence
+- Timestamp
+- Delivery Status
+
+</div>
+
+---
+
+# 🎯 AI Output Summary
+
+| Feature | Output |
+|----------|---------|
+| 🧠 Segmentation | ✅ |
+| 🔥 Heatmap | ✅ |
+| 📊 Slice Graph | ✅ |
+| 📄 Medical Report | ✅ |
+| 📧 Doctor Sharing | ✅ |
+| 🗂 Patient History | ✅ |
+| 🛡 Admin Dashboard | ✅ |
+
+---
+
+# 🚀 End-to-End Workflow
+
+```mermaid
+flowchart LR
+
+A[Patient Login]
+--> B[MRI Upload]
+--> C[Preprocessing]
+--> D[3D U-Net]
+--> E[Segmentation]
+--> F[Visualization]
+--> G[Medical Report]
+--> H[Doctor]
+```
+
+---
+
+# 💡 Why BRAINAI?
+
+<div align="center">
+
+| Feature | Benefit |
+|----------|----------|
+| 🧠 AI-powered segmentation | Faster diagnosis support |
+| 📊 Interactive visualizations | Better clinical interpretation |
+| 📄 Automated reporting | Reduced manual effort |
+| 📧 Doctor sharing | Streamlined collaboration |
+| 🛡 Role-based access | Secure workflows |
+| 🗂 Patient history | Long-term monitoring |
+
+</div>
+
+---
+
+<div align="center">
+
+## ⭐ Experience the Complete AI Workflow
+
+**MRI Upload → AI Segmentation → Explainable Visualization → Clinical Reporting**
+
+</div>
