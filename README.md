@@ -1,240 +1,161 @@
-# BRAINAI – Brain Tumor Segmentation Portal
+<div align="center">
 
-BRAINAI is a Flask-based brain tumor segmentation platform for multimodal MRI analysis. It uses a pretrained 3D U-Net model to analyze FLAIR, T1, T1c, and T2 MRI volumes and generate segmentation masks, overlay images, confidence maps, and slice-wise tumor activity graphs. The system also supports report sharing to doctors with timestamped activity tracking. 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=320&color=gradient&customColorList=12,20,24,30&text=BRAINAI&fontSize=70&fontAlignY=35&desc=AI-Powered%20Brain%20Tumor%20Segmentation%20Platform&descAlignY=55&animation=fadeIn"/>
 
-## Overview
+<br>
 
-This application is designed for automated brain tumor segmentation and report generation in a web interface. Users can upload four MRI modalities in the correct order, run inference, review the results, and send the final report to a doctor. The admin dashboard provides user management, message monitoring, and report history. 
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=26&duration=3500&pause=1000&center=true&vCenter=true&width=900&lines=3D+U-Net+Brain+Tumor+Segmentation;Multimodal+MRI+Analysis;Medical+AI+Platform;TensorFlow+%7C+Flask+%7C+Keras;AI+for+Healthcare"/>
 
----
-
-## Key Features
-
-- Multimodal MRI support: FLAIR, T1, T1c, T2.
-- AI-based tumor segmentation using a pretrained 3D U-Net model.
-- Overlay visualization of predicted tumor regions.
-- Slice-wise tumor area graph.
-- Confidence heatmap for segmentation quality.
-- Downloadable output mask and generated images.
-- User dashboard for prediction and report submission.
-- Admin dashboard for managing users, messages, and report records.
-- Report history with doctor name, doctor email, status, and sent date/time.
-- Secure login with role-based access.
+</div>
 
 ---
 
-## Technology Stack
+<div align="center">
 
-```mermaid
-graph TB
-    A[Flask Backend] --> B[SQLite Database]
-    A --> C[3D U-Net Model]
-    C --> D[TensorFlow / Keras]
-    A --> E[Nibabel + NumPy]
-    F[HTML / CSS / JavaScript] --> A
-```
+[![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)]()
 
-- Backend: Flask.
-- AI/ML: TensorFlow, Keras, NumPy.
-- Medical imaging: NiBabel, NIfTI files.
-- Database: SQLite.
-- Frontend: HTML, CSS, JavaScript.
-- Visualization: Matplotlib-generated overlays and graphs.
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge&logo=tensorflow)]()
+
+[![Keras](https://img.shields.io/badge/Keras-DeepLearning-red?style=for-the-badge&logo=keras)]()
+
+[![Flask](https://img.shields.io/badge/Flask-WebApp-black?style=for-the-badge&logo=flask)]()
+
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
+
+[![Status](https://img.shields.io/badge/Status-Production-success?style=for-the-badge)]()
+
+</div>
 
 ---
 
-## Project Structure
+<div align="center">
 
-```text
-brainai/
-├── app.py
-├── ai_model.py
-├── db.py
-├── brain_tumor_3DUNet.keras
-├── requirements.txt
-├── README.md
-├── static/
-│   ├── uploads/
-│   ├── results/
-│   ├── css/
-│   └── js/
-└── templates/
-    ├── login.html
-    ├── base.html
-    ├── admin_dashboard.html
-    ├── user_dashboard.html
-    └── activity.html
-```
+# 🧠 BRAINAI
 
-This structure keeps prediction, database logic, and templates separated, which makes the app easier to maintain and extend. 
+### AI-Powered Brain Tumor Segmentation & Medical Imaging Platform
+
+Early detection of brain tumors using **Deep Learning**, **3D U-Net**, and **Multimodal MRI Analysis**.
+
+Designed for researchers, hospitals, healthcare professionals, and AI engineers.
+
+</div>
 
 ---
 
-## Setup Instructions
+# 🌟 Overview
 
-### 1. Clone the repository
+BRAINAI is an end-to-end Artificial Intelligence platform that performs automatic **brain tumor segmentation** from multimodal MRI scans using a pretrained **3D U-Net** neural network.
 
-```bash
-git clone https://github.com/your-username/brainai.git
-cd brainai
-```
+The system analyzes four MRI modalities:
 
-### 2. Create a virtual environment
+- 🧠 FLAIR
+- 🧠 T1
+- 🧠 T1CE
+- 🧠 T2
 
-```bash
-python -m venv venv
-```
+and generates:
 
-Activate it:
+- Tumor Segmentation Mask
+- Tumor Overlay Images
+- Confidence Heatmap
+- Slice-wise Tumor Distribution
+- Medical Report
+- Doctor Sharing System
+- Patient History
+- Activity Tracking
 
-```bash
-# Linux / macOS
-source venv/bin/activate
-
-# Windows
-venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Initialize the database
-
-```bash
-python db.py
-```
-
-This creates the required tables for users, messages, and reports. 
-
-### 5. Add the trained model
-
-Place your trained file here:
-
-```text
-brain_tumor_3DUNet.keras
-```
-
-### 6. Run the app
-
-```bash
-python app.py
-```
-
-Open:
-
-```text
-http://localhost:5000
-```
+Unlike conventional medical imaging tools, BRAINAI provides an intuitive web-based interface allowing doctors and researchers to analyze MRI volumes without interacting directly with machine learning pipelines.
 
 ---
 
-## User Workflow
+# 🎯 Key Highlights
 
-1. Register or log in.
-2. Upload the four MRI files in this exact order:
-   - FLAIR
-   - T1
-   - T1c
-   - T2
-3. Run the prediction.
-4. Review segmentation overlays, confidence heatmap, and slice graph.
-5. Enter doctor details and send the report.
-6. View report status and sent timestamp in the dashboard history.
+<table>
 
----
+<tr>
 
-## Admin Workflow
+<td align="center">
 
-1. View registered users.
-2. Approve or promote users.
-3. Monitor messages.
-4. Review recent report activity.
-5. Check when each report was sent and to whom. 
+🧠
 
----
+### Deep Learning
 
-## Report Tracking
+3D U-Net
 
-Each report should store the following fields:
+TensorFlow
 
-- Patient email.
-- Doctor name.
-- Doctor email.
-- Prediction result.
-- Confidence score.
-- Tumor voxel count.
-- Report status.
-- Report sent date/time.
+</td>
 
-A typical report entry should look like this:
+<td align="center">
 
-```text
-Patient: user@example.com
-Doctor: Dr. Smith
-Doctor Email: drsmith@hospital.com
-Prediction: Tumor Detected
-Confidence: 94.2%
-Tumor Voxels: 125430
-Status: Sent
-Sent At: 2026-04-15 12:15 PM
-```
+🏥
 
----
+### Medical Imaging
 
+NIfTI
 
+MRI
 
----
+NiBabel
 
-## Screenshot Labels
+</td>
 
-Use these cleaner labels in your README:
+<td align="center">
 
-- Login Portal.
-<img width="757" height="869" alt="Screenshot 2026-04-13 225034" src="https://github.com/user-attachments/assets/466370dc-a5e4-4827-a6bd-d58fd2b98a06" />
+⚡
 
-- Patient Upload Dashboard.
-  <img width="1764" height="741" alt="Screenshot 2026-04-15 122623" src="https://github.com/user-attachments/assets/f39d243c-f921-4b14-88d0-d8f49f00d413" />
+### Web Platform
 
-- Segmentation Result View.
-- <img width="1441" height="640" alt="Screenshot 2026-04-15 114449" src="https://github.com/user-attachments/assets/fab4bb24-5b20-4831-b7bc-1714a3681f57" />
+Flask
 
-- Confidence Heatmap.
-  <img width="1839" height="885" alt="Screenshot 2026-04-15 114511" src="https://github.com/user-attachments/assets/d613f51c-00ad-402e-bd55-49d366d13ee0" />
-<img width="1773" height="776" alt="Screenshot 2026-04-15 114530" src="https://github.com/user-attachments/assets/f6b29da1-a43a-4053-b8c6-52cff4da863d" />
+SQLite
 
-- Slice-wise Tumor Activity Graph.
-  <img width="1916" height="928" alt="Screenshot 2026-04-15 114539" src="https://github.com/user-attachments/assets/546902ec-e09f-4e46-a32c-2e062585ccaf" />
+REST
 
-- Output Download Section.
-  <img width="1712" height="530" alt="Screenshot 2026-04-15 114612" src="https://github.com/user-attachments/assets/d24c7a12-a1f3-4b19-a6b7-2fbfc8cafbd2" />
+</td>
 
-- Patient Medical History.
-  <img width="1633" height="824" alt="Screenshot 2026-04-15 120055" src="https://github.com/user-attachments/assets/ed3e8a5f-6715-42ac-aa7d-aa5ec69c9dda" />
+<td align="center">
 
-- User Profile.
-- <img width="1638" height="831" alt="Screenshot 2026-04-15 120113" src="https://github.com/user-attachments/assets/39e33aa0-8cd7-4bd8-b4c3-42674eb408a5" />
+📈
 
-- Admin Dashboard.
-- <img width="1625" height="762" alt="Screenshot 2026-04-15 121706" src="https://github.com/user-attachments/assets/8fa4bc0b-8388-43da-afe8-83e5a3d92c22" />
-<img width="1793" height="815" alt="Screenshot 2026-04-15 121647" src="https://github.com/user-attachments/assets/14a6275d-c2bb-465d-b385-a018182df0e5" />
-<img width="1778" height="866" alt="Screenshot 2026-04-15 121629" src="https://github.com/user-attachments/assets/2850db97-589e-43fc-9ec0-e9ac55ac0249" />
+### Visualization
 
-- Report Activity Log.
----
+Heatmaps
 
-## Recommended Notes
+Graphs
 
-- Keep the MRI order fixed: FLAIR, T1, T1c, T2.
-- Accept only `.nii` and `.nii.gz` files.
-- Save the report timestamp when sending to the doctor.
-- Show sent vs pending status clearly.
-- Use consistent medical terminology across the app. ]
+Overlay Images
+
+</td>
+
+</tr>
+
+</table>
 
 ---
 
-## License
+# 📊 Project Statistics
 
-MIT License.
+| Feature | Details |
+|----------|----------|
+| AI Model | 3D U-Net |
+| Framework | TensorFlow / Keras |
+| Backend | Flask |
+| Database | SQLite |
+| MRI Modalities | 4 |
+| Output Types | 6 |
+| Deployment | Local / Cloud |
+| Medical Domain | Brain Tumor Segmentation |
+| License | MIT |
+
+---
+
+<div align="center">
+
+## ⭐ If this project helps your research,
+
+### Consider giving it a ⭐
+
+</div>
+
+---
