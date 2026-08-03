@@ -211,7 +211,7 @@ J --> A
 ## 🔐 Secure Authentication
 
 <p align="center">
-<img src="assets/login.png" width="900" alt="Login Page">
+<img width="900" src="https://github.com/user-attachments/assets/466370dc-a5e4-4827-a6bd-d58fd2b98a06">
 </p>
 
 - Secure user authentication
@@ -223,7 +223,7 @@ J --> A
 ## 🏥 Patient Dashboard
 
 <p align="center">
-<img src="assets/dashboard.png" width="1000" alt="Patient Dashboard">
+<img width="1000" src="https://github.com/user-attachments/assets/f39d243c-f921-4b14-88d0-d8f49f00d413">
 </p>
 
 Features:
@@ -237,9 +237,7 @@ Features:
 
 ## 📂 MRI Upload
 
-<p align="center">
-<img src="assets/upload.png" width="1000" alt="MRI Upload">
-</p>
+
 
 Supported MRI modalities:
 
@@ -250,12 +248,10 @@ Supported MRI modalities:
 
 The platform validates all uploaded files before AI inference.
 
----
-
 ## 🧠 AI Prediction Results
 
 <p align="center">
-<img src="assets/result.png" width="1000" alt="Prediction Results">
+<img width="1000" src="https://github.com/user-attachments/assets/fab4bb24-5c20-4831-b7bc-1714a3681f57">
 </p>
 
 Generated outputs include:
@@ -266,12 +262,11 @@ Generated outputs include:
 - Prediction Confidence
 - AI-assisted Diagnosis
 
----
 
 ## 🔥 Confidence Heatmap
 
 <p align="center">
-<img src="assets/heatmap.png" width="1000" alt="Confidence Heatmap">
+<img width="1000" src="https://github.com/user-attachments/assets/d613f51c-00ad-402e-bd55-49d366d13ee0">
 </p>
 
 Visualizes prediction confidence, helping users interpret AI-generated segmentation results.
@@ -280,9 +275,8 @@ Visualizes prediction confidence, helping users interpret AI-generated segmentat
 
 ## 📈 Slice-wise Tumor Analysis
 
-<p align="center">
-<img src="assets/graph.png" width="1000" alt="Tumor Distribution">
-</p>
+<p align="center"> <img width="1000" src="https://github.com/user-attachments/assets/546902ec-e09f-4e46-a32c-2e062585ccaf"> </p>
+
 
 Displays tumor distribution across MRI slices for better clinical interpretation.
 
@@ -290,9 +284,8 @@ Displays tumor distribution across MRI slices for better clinical interpretation
 
 ## 📄 Medical Report
 
-<p align="center">
-<img src="assets/report.png" width="1000" alt="Medical Report">
-</p>
+<p align="center"> <img width="1000" src="https://github.com/user-attachments/assets/d24c7a12-a1f3-4b19-a6b7-2fbfc8cafbd2"> </p>
+
 
 Automatically generates a structured report containing:
 
@@ -305,19 +298,15 @@ Automatically generates a structured report containing:
 
 ## 📋 Patient History
 
-<p align="center">
-<img src="assets/history.png" width="1000" alt="Patient History">
-</p>
+<p align="center"> <img width="1000" src="https://github.com/user-attachments/assets/ed3e8a5f-6715-42ac-aa7d-aa5ec69c9dda"> </p>
 
 Allows users to review previous MRI uploads, predictions, and generated reports.
 
----
+--
 
 ## 🛡️ Administrator Dashboard
 
-<p align="center">
-<img src="assets/admin.png" width="1000" alt="Administrator Dashboard">
-</p>
+<p align="center"> <img width="900" src="https://github.com/user-attachments/assets/39e33aa0-8cd7-4bd8-b4c3-42674eb408a5"> </p>
 
 Administrator capabilities include:
 
