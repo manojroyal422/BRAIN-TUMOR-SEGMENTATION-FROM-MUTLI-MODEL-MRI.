@@ -1509,43 +1509,6 @@ Hospital Scale
 
 ---
 
-# 🧩 Project Modules
-
-```mermaid
-flowchart LR
-
-A[Authentication]
-
--->
-
-B[Patient Dashboard]
-
--->
-
-C[MRI Upload]
-
--->
-
-D[AI Prediction]
-
--->
-
-E[Visualization]
-
--->
-
-F[Medical Report]
-
--->
-
-G[History]
-
--->
-
-H[Admin Dashboard]
-```
-
----
 
 # 📈 Prediction Outputs
 
@@ -1560,30 +1523,6 @@ H[Admin Dashboard]
 | Patient History | ✅ |
 
 ---
-
-# 🏥 Clinical Workflow
-
-```mermaid
-flowchart TD
-
-A[Patient]
-
--->
-
-B[Upload MRI]
-
--->
-
-C[AI Prediction]
-
--->
-
-D[Doctor Review]
-
--->
-
-E[Treatment Planning]
-```
 
 ---
 
@@ -1663,24 +1602,6 @@ title BRAINAI Roadmap
 ```
 
 ---
-
-# ⭐ Project Highlights
-
-<div align="center">
-
-| Feature | Status |
-|----------|--------|
-| 🧠 AI Powered | ✅ |
-| 🏥 Medical Imaging | ✅ |
-| 📊 Analytics | ✅ |
-| 📄 Report Generation | ✅ |
-| 🔥 Heatmaps | ✅ |
-| 📈 Visualization | ✅ |
-| ☁ Cloud Ready | ✅ |
-| 🔒 Secure | ✅ |
-
-</div>
-
 ---
 
 # 📌 Key Advantages
