@@ -1,194 +1,139 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=320&color=gradient&customColorList=12,20,24,30&text=BRAINAI&fontSize=70&fontAlignY=35&desc=AI-Powered%20Brain%20Tumor%20Segmentation%20Platform&descAlignY=55&animation=fadeIn"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&customColorList=12,20,24,30&text=BRAINAI&fontSize=70&fontAlignY=35&desc=AI-Powered%20Brain%20Tumor%20Segmentation%20Platform&descAlignY=55&animation=fadeIn" width="100%" />
 
 <br>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=26&duration=3500&pause=1000&center=true&vCenter=true&width=900&lines=3D+U-Net+Brain+Tumor+Segmentation;Multimodal+MRI+Analysis;Medical+AI+Platform;TensorFlow+%7C+Flask+%7C+Keras;AI+for+Healthcare"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=24&duration=3500&pause=1000&center=true&vCenter=true&width=900&lines=3D+U-Net+Brain+Tumor+Segmentation;Multimodal+MRI+Analysis;Explainable+Medical+AI;TensorFlow+%7C+Flask+%7C+Keras;Built+for+Healthcare+Innovation" />
 
-</div>
-
----
-
-<div align="center">
-
-[![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)]()
-
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge&logo=tensorflow)]()
-
-[![Keras](https://img.shields.io/badge/Keras-DeepLearning-red?style=for-the-badge&logo=keras)]()
-
-[![Flask](https://img.shields.io/badge/Flask-WebApp-black?style=for-the-badge&logo=flask)]()
-
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
-
-[![Status](https://img.shields.io/badge/Status-Production-success?style=for-the-badge)]()
-
-</div>
-
----
-
-<div align="center">
+<br><br>
 
 # 🧠 BRAINAI
 
 ### AI-Powered Brain Tumor Segmentation & Medical Imaging Platform
 
-Early detection of brain tumors using **Deep Learning**, **3D U-Net**, and **Multimodal MRI Analysis**.
+Detect • Segment • Visualize • Report
 
-Designed for researchers, hospitals, healthcare professionals, and AI engineers.
+<p>
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge&logo=tensorflow" />
+  <img src="https://img.shields.io/badge/Keras-DeepLearning-red?style=for-the-badge&logo=keras" />
+  <img src="https://img.shields.io/badge/Flask-Web%20Application-black?style=for-the-badge&logo=flask" />
+  <img src="https://img.shields.io/badge/SQLite-Database-blue?style=for-the-badge&logo=sqlite" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+</p>
+
+<p>
+
+An end-to-end Artificial Intelligence platform that automatically detects and segments brain tumors from multimodal MRI scans using a pretrained **3D U-Net** deep learning model. The platform provides interactive visualizations, explainable AI outputs, automated medical reports, and a secure web interface for healthcare professionals and researchers.
+
+</p>
 
 </div>
+# 🚀 Project Overview
+
+BRAINAI is an end-to-end AI-powered medical imaging platform that performs automatic brain tumor segmentation from multimodal MRI scans using a pretrained **3D U-Net** deep learning model.
+
+The platform enables users to upload four MRI modalities (**FLAIR, T1, T1CE, and T2**) through a secure Flask-based web application. After preprocessing the MRI volumes, the AI model generates accurate tumor segmentation masks along with explainable visualizations, including tumor overlays, confidence heatmaps, slice-wise distribution graphs, and automated medical reports.
+
+Designed with researchers, healthcare professionals, and AI engineers in mind, BRAINAI combines deep learning, medical image processing, and an intuitive user interface to simplify brain tumor analysis while supporting faster and more informed clinical decision-making.
 
 ---
 
-# 🌟 Overview
+## 🎯 Key Highlights
 
-BRAINAI is an end-to-end Artificial Intelligence platform that performs automatic **brain tumor segmentation** from multimodal MRI scans using a pretrained **3D U-Net** neural network.
+- 🧠 Automated brain tumor segmentation using a pretrained **3D U-Net** model.
+- 🩻 Supports multimodal MRI scans: **FLAIR, T1, T1CE, and T2**.
+- 🔍 Explainable AI outputs with segmentation masks, overlays, and confidence heatmaps.
+- 📊 Interactive visualizations including slice-wise tumor distribution.
+- 📄 Automated medical report generation for clinical review.
+- 🔐 Secure role-based authentication for patients, doctors, and administrators.
+- 💾 Patient history and report management using SQLite.
+- 🐳 Docker-ready architecture for easy deployment.
+- ☁️ Designed for local execution with cloud deployment support.
 
-The system analyzes four MRI modalities:
+---# ✨ Features
 
-- 🧠 FLAIR
-- 🧠 T1
-- 🧠 T1CE
-- 🧠 T2
-
-and generates:
-
-- Tumor Segmentation Mask
-- Tumor Overlay Images
-- Confidence Heatmap
-- Slice-wise Tumor Distribution
-- Medical Report
-- Doctor Sharing System
-- Patient History
-- Activity Tracking
-
-Unlike conventional medical imaging tools, BRAINAI provides an intuitive web-based interface allowing doctors and researchers to analyze MRI volumes without interacting directly with machine learning pipelines.
-
----
-
-# 🎯 Key Highlights
-
-<table>
-
-<tr>
-
-<td align="center">
-
-🧠
-
-### Deep Learning
-
-3D U-Net
-
-TensorFlow
-
-</td>
-
-<td align="center">
-
-🏥
-
-### Medical Imaging
-
-NIfTI
-
-MRI
-
-NiBabel
-
-</td>
-
-<td align="center">
-
-⚡
-
-### Web Platform
-
-Flask
-
-SQLite
-
-REST
-
-</td>
-
-<td align="center">
-
-📈
-
-### Visualization
-
-Heatmaps
-
-Graphs
-
-Overlay Images
-
-</td>
-
-</tr>
-
-</table>
+| Category | Features |
+|-----------|----------|
+| 🧠 **AI Engine** | Automatic brain tumor segmentation using a pretrained **3D U-Net** deep learning model. |
+| 🩻 **Multimodal MRI Support** | Accepts **FLAIR, T1, T1CE, and T2** MRI modalities in `.nii` and `.nii.gz` formats. |
+| 📊 **Explainable AI** | Generates segmentation masks, tumor overlays, confidence heatmaps, and slice-wise tumor distribution visualizations. |
+| 📄 **Automated Reports** | Produces AI-assisted medical reports summarizing prediction results for clinical review. |
+| 👨‍⚕️ **Role-Based Access** | Separate dashboards and secure authentication for Patients, Doctors, and Administrators. |
+| 📂 **Patient Management** | Stores MRI uploads, prediction history, reports, and patient records in a centralized database. |
+| 📈 **Interactive Dashboard** | Provides an intuitive interface to upload scans, monitor predictions, and review previous analyses. |
+| 🔒 **Security** | Implements authentication, session management, input validation, and protected access to sensitive medical data. |
+| 🐳 **Deployment Ready** | Docker support with compatibility for local environments and cloud platforms such as AWS, Azure, Google Cloud, Railway, and Render. |
+| ⚡ **Scalable Architecture** | Modular Flask-based backend designed for future integration with larger healthcare systems and cloud infrastructure. |
 
 ---
 
-# 📊 Project Statistics
+## 🌟 Why BRAINAI?
 
-| Feature | Details |
-|----------|----------|
-| AI Model | 3D U-Net |
-| Framework | TensorFlow / Keras |
-| Backend | Flask |
-| Database | SQLite |
-| MRI Modalities | 4 |
-| Output Types | 6 |
-| Deployment | Local / Cloud |
-| Medical Domain | Brain Tumor Segmentation |
-| License | MIT |
+- 🧠 **AI-powered brain tumor segmentation** using state-of-the-art deep learning.
+- 🏥 **Designed for healthcare workflows** with secure patient and doctor management.
+- 📊 **Explainable AI** to improve trust and interpretability of predictions.
+- 📄 **Automated reporting** to reduce manual effort and support faster diagnosis.
+- ☁️ **Cloud-ready architecture** for future scalability and deployment.
+- 🔬 **Research-friendly platform** suitable for medical imaging, AI, and academic projects.
+# 🛠️ Tech Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| 💻 **Programming Language** | Python 3.11 |
+| 🧠 **Deep Learning** | TensorFlow, Keras, 3D U-Net |
+| 🩻 **Medical Imaging** | NiBabel, NumPy, OpenCV |
+| 🌐 **Backend Framework** | Flask |
+| 🎨 **Frontend** | HTML5, CSS3, JavaScript, Bootstrap |
+| 🗄️ **Database** | SQLite |
+| 📊 **Visualization** | Matplotlib |
+| 🔐 **Authentication** | Flask Sessions, Role-Based Access Control |
+| 🐳 **Deployment** | Docker, AWS EC2, Azure VM, Google Cloud, Railway, Render |
+| ⚙️ **Development Tools** | Git, GitHub, VS Code, Virtual Environment |
 
 ---
+
+## ⚡ Technology Overview
 
 <div align="center">
 
-## ⭐ If this project helps your research,
-
-### Consider giving it a ⭐
+| AI & Machine Learning | Backend | Database | Deployment |
+|:---------------------:|:-------:|:--------:|:----------:|
+| ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow) | ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask) | ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite) | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker) |
+| ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras) | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python) | ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy) | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws) |
+| ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv) | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5) | ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge) | ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud) |
 
 </div>
-
 # 🏗️ System Architecture
 
-<div align="center">
-
-## ⚡ Enterprise AI Architecture
+The BRAINAI platform follows a modular architecture that integrates secure user authentication, multimodal MRI processing, deep learning inference, and interactive result visualization. The workflow is designed to provide an end-to-end AI-assisted medical imaging solution for brain tumor analysis.
 
 ```mermaid
 flowchart LR
 
-subgraph Client
-A[👨‍⚕️ Patient]
-B[👨‍⚕️ Doctor]
-C[🛡️ Admin]
+subgraph Users
+    A[👤 Patient]
+    B[👨‍⚕️ Doctor]
+    C[🛡️ Admin]
 end
 
 subgraph Frontend
-D[🌐 Flask Web Portal]
-E[🔐 Authentication]
-F[📤 MRI Upload]
+    D[🌐 Flask Web Application]
+    E[🔐 Authentication]
+    F[📂 MRI Upload]
 end
 
-subgraph Backend
-G[⚙️ Prediction Engine]
-H[🧠 3D U-Net Model]
-I[📊 Visualization]
-J[📄 Report Generator]
+subgraph AI Engine
+    G[🩻 MRI Preprocessing]
+    H[🧠 3D U-Net Model]
+    I[📊 Segmentation & Analysis]
+    J[📄 Report Generator]
 end
 
 subgraph Storage
-K[(SQLite)]
-L[(MRI Files)]
+    K[(SQLite Database)]
+    L[(MRI Files)]
 end
 
 A --> D
@@ -199,445 +144,294 @@ D --> E
 E --> F
 
 F --> G
-
 G --> H
-
 H --> I
-
 I --> J
 
 J --> K
-
 F --> L
 
 J --> B
-```
-
-</div>
-
----
-
-# 🧠 AI Inference Pipeline
-
-<div align="center">
-
-```mermaid
-flowchart TD
-
-A[📂 Upload MRI Files]
-
-A --> B[FLAIR]
-
-A --> C[T1]
-
-A --> D[T1CE]
-
-A --> E[T2]
-
-B --> F[Load Images]
-
-C --> F
-
-D --> F
-
-E --> F
-
-F --> G[Normalize]
-
-G --> H[Resize]
-
-H --> I[Stack Channels]
-
-I --> J[Patch Generator]
-
-J --> K[3D U-Net]
-
-K --> L[Segmentation]
-
-L --> M[Overlay]
-
-M --> N[Heatmap]
-
-N --> O[Tumor Graph]
-
-O --> P[Medical Report]
-
-P --> Q[(Database)]
-
-Q --> R[Doctor Portal]
-```
-
-</div>
-
----
-
-# 🧠 Deep Learning Workflow
-
-```mermaid
-flowchart LR
-
-A[MRI Dataset]
-
--->
-
-B[Preprocessing]
-
--->
-
-C[Normalization]
-
--->
-
-D[Patch Extraction]
-
--->
-
-E[3D U-Net]
-
--->
-
-F[Prediction]
-
--->
-
-G[Post Processing]
-
--->
-
-H[Visualization]
-
--->
-
-I[Medical Report]
+J --> A
 ```
 
 ---
 
-# ⚙️ Prediction Workflow
+## 🔄 Workflow Overview
 
-```mermaid
-flowchart TD
+1. **User Authentication**
+   - Patients, doctors, and administrators securely log in to the platform.
 
-A[Patient Login]
+2. **MRI Upload**
+   - Users upload four MRI modalities:
+     - FLAIR
+     - T1
+     - T1CE
+     - T2
 
--->
+3. **Image Preprocessing**
+   - MRI volumes are validated, normalized, resized, and prepared for inference.
 
-B[Upload MRI]
+4. **AI Inference**
+   - The pretrained **3D U-Net** model performs automatic brain tumor segmentation.
 
--->
+5. **Visualization**
+   - The platform generates:
+     - Tumor segmentation masks
+     - Tumor overlay images
+     - Confidence heatmaps
+     - Slice-wise tumor distribution graphs
 
-C[Validate MRI]
+6. **Medical Report Generation**
+   - AI prediction results are summarized into a structured medical report.
 
--->
+7. **Data Management**
+   - Reports, prediction history, and user information are securely stored in the SQLite database.
 
-D[Load Images]
+8. **Clinical Review**
+   - Doctors review the AI-generated outputs to support diagnosis and patient management.
+   # 📸 Application Demo
 
--->
+> **Experience the complete AI-powered brain tumor analysis workflow—from MRI upload to automated medical report generation.**
 
-E[Normalize]
+<p align="center">
 
--->
+<img src="assets/demo.gif" width="100%" alt="BRAINAI Demo"/>
 
-F[Generate Patches]
+</p>
 
--->
+> **Demo Workflow:** Login → Upload MRI → AI Prediction → Visualization → Medical Report
 
-G[AI Prediction]
-
--->
-
-H[Tumor Mask]
-
--->
-
-I[Confidence]
-
--->
-
-J[Overlay]
-
--->
-
-K[Slice Graph]
-
--->
-
-L[Medical Report]
-
--->
-
-M[Send to Doctor]
-```
+> **Note:** Replace `assets/demo.gif` with your actual screen recording or GIF.
 
 ---
 
-# 🧠 3D U-Net Architecture
+# 🖥️ Application Showcase
 
-```mermaid
-flowchart TD
+## 🔐 Secure Authentication
 
-A[Input MRI Volume]
+<p align="center">
+<img src="assets/login.png" width="900" alt="Login Page">
+</p>
 
--->
-
-B[Encoder]
-
--->
-
-C[Conv3D]
-
--->
-
-D[BatchNorm]
-
--->
-
-E[ReLU]
-
--->
-
-F[MaxPooling]
-
--->
-
-G[Bottleneck]
-
--->
-
-H[Decoder]
-
--->
-
-I[Skip Connections]
-
--->
-
-J[Conv3D]
-
--->
-
-K[Softmax]
-
--->
-
-L[Tumor Mask]
-```
+- Secure user authentication
+- Role-based access control
+- Patient, Doctor, and Administrator login
 
 ---
 
-# 📊 AI Processing Pipeline
+## 🏥 Patient Dashboard
 
-```mermaid
-flowchart LR
+<p align="center">
+<img src="assets/dashboard.png" width="1000" alt="Patient Dashboard">
+</p>
 
-A[MRI]
+Features:
 
--->
-
-B[Image Loader]
-
--->
-
-C[Preprocessing]
-
--->
-
-D[TensorFlow]
-
--->
-
-E[Prediction]
-
--->
-
-F[Visualization]
-
--->
-
-G[Database]
-
--->
-
-H[Doctor Dashboard]
-```
+- Upload multimodal MRI scans
+- View prediction history
+- Track generated reports
+- Access previous analyses
 
 ---
 
-# 🗂️ Software Modules
+## 📂 MRI Upload
 
-| Module | Description |
-|---------|-------------|
-| 🔐 Authentication | Secure Login & Registration |
-| 📂 MRI Upload | Upload 4 MRI Modalities |
-| 🧠 AI Engine | 3D U-Net Segmentation |
-| 📊 Visualization | Overlay + Heatmap |
-| 📈 Analytics | Slice-wise Tumor Graph |
-| 📄 Report | Doctor Report Generation |
-| 💾 Database | Patient History |
-| 🛡️ Admin | User & Activity Management |
+<p align="center">
+<img src="assets/upload.png" width="1000" alt="MRI Upload">
+</p>
 
----
+Supported MRI modalities:
 
-# 📂 System Components
+- ✅ FLAIR
+- ✅ T1
+- ✅ T1CE
+- ✅ T2
 
-```mermaid
-graph LR
-
-A[Frontend]
-
--->
-
-B[Flask]
-
--->
-
-C[Authentication]
-
--->
-
-D[Prediction Service]
-
--->
-
-E[TensorFlow]
-
--->
-
-F[SQLite]
-
--->
-
-G[Report Generator]
-
--->
-
-H[Doctor Dashboard]
-```
+The platform validates all uploaded files before AI inference.
 
 ---
 
-# 🔄 End-to-End Clinical Workflow
+## 🧠 AI Prediction Results
 
-```mermaid
-sequenceDiagram
+<p align="center">
+<img src="assets/result.png" width="1000" alt="Prediction Results">
+</p>
 
-actor Patient
+Generated outputs include:
 
-participant Flask
-
-participant AI
-
-participant Database
-
-participant Doctor
-
-Patient->>Flask: Login
-
-Patient->>Flask: Upload MRI
-
-Flask->>AI: Preprocess Images
-
-AI-->>Flask: Segmentation
-
-Flask->>Database: Save Report
-
-Flask->>Doctor: Send Report
-
-Doctor-->>Patient: Review Diagnosis
-```
+- Brain Tumor Segmentation Mask
+- MRI Overlay Images
+- Tumor Volume Estimation
+- Prediction Confidence
+- AI-assisted Diagnosis
 
 ---
 
-# 📌 MRI Input Specification
+## 🔥 Confidence Heatmap
 
-| MRI Modality | Required | Format |
-|--------------|----------|---------|
-| FLAIR | ✅ | .nii / .nii.gz |
-| T1 | ✅ | .nii / .nii.gz |
-| T1CE | ✅ | .nii / .nii.gz |
-| T2 | ✅ | .nii / .nii.gz |
+<p align="center">
+<img src="assets/heatmap.png" width="1000" alt="Confidence Heatmap">
+</p>
 
----
-
-# 🎯 Generated Outputs
-
-| Output | Description |
-|---------|-------------|
-| 🧠 Tumor Mask | AI Segmentation Output |
-| 🖼 Overlay | MRI + Tumor Overlay |
-| 🔥 Heatmap | Confidence Visualization |
-| 📈 Slice Graph | Tumor Distribution |
-| 📄 Medical Report | AI Diagnosis |
-| 💾 Database Record | Patient History |
-| 📧 Doctor Report | Email Sharing |
+Visualizes prediction confidence, helping users interpret AI-generated segmentation results.
 
 ---
 
-<div align="center">
+## 📈 Slice-wise Tumor Analysis
 
-# 🚀 Enterprise AI Workflow
+<p align="center">
+<img src="assets/graph.png" width="1000" alt="Tumor Distribution">
+</p>
+
+Displays tumor distribution across MRI slices for better clinical interpretation.
+
+---
+
+## 📄 Medical Report
+
+<p align="center">
+<img src="assets/report.png" width="1000" alt="Medical Report">
+</p>
+
+Automatically generates a structured report containing:
+
+- Prediction Summary
+- Confidence Score
+- Tumor Analysis
+- Supporting Visualizations
+
+---
+
+## 📋 Patient History
+
+<p align="center">
+<img src="assets/history.png" width="1000" alt="Patient History">
+</p>
+
+Allows users to review previous MRI uploads, predictions, and generated reports.
+
+---
+
+## 🛡️ Administrator Dashboard
+
+<p align="center">
+<img src="assets/admin.png" width="1000" alt="Administrator Dashboard">
+</p>
+
+Administrator capabilities include:
+
+- User Management
+- Patient Monitoring
+- Report Tracking
+- Activity Logs
+- System Administration
+# 📂 Project Structure
 
 ```text
-MRI Upload
-    │
-    ▼
-Preprocessing
-    │
-    ▼
-3D U-Net AI
-    │
-    ▼
-Segmentation
-    │
-    ▼
-Visualization
-    │
-    ▼
-Medical Report
-    │
-    ▼
-Doctor Portal
+BRAINAI/
+│
+├── 📁 assets/                     # Images, banners, demo GIFs
+│
+├── 📁 database/                   # SQLite database
+│   └── brainai.db
+│
+├── 📁 docs/                       # Additional documentation
+│
+├── 📁 models/                     # Trained AI models
+│   └── brain_tumor_3DUNet.keras
+│
+├── 📁 static/
+│   ├── css/
+│   ├── js/
+│   ├── uploads/                   # Uploaded MRI scans
+│   ├── results/                   # AI prediction outputs
+│   └── images/
+│
+├── 📁 templates/
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── upload.html
+│   ├── prediction.html
+│   ├── report.html
+│   ├── history.html
+│   ├── profile.html
+│   └── admin_dashboard.html
+│
+├── app.py                         # Flask application entry point
+├── ai_model.py                    # AI inference pipeline
+├── db.py                          # Database operations
+├── config.py                      # Application configuration
+├── requirements.txt               # Python dependencies
+├── Dockerfile                     # Docker configuration
+├── .env.example                   # Environment variables template
+├── LICENSE
+└── README.md
 ```
 
-</div>
-
----
-# 🚀 Quick Start
-
-<div align="center">
-
-> **Get BRAINAI running in less than 5 minutes**
-
-</div>
-
 ---
 
-# 📋 Prerequisites
+## 📁 Directory Overview
 
-| Requirement | Version | Status |
-|-------------|---------|--------|
-| Python | 3.10+ | ✅ Required |
-| TensorFlow | 2.x | ✅ Required |
-| Git | Latest | ✅ Required |
-| SQLite | Built-in | ✅ Required |
-| RAM | 8 GB+ | ✅ Recommended |
-| GPU (Optional) | CUDA 11+ | 🚀 Recommended |
+| Directory/File | Purpose |
+|----------------|---------|
+| **assets/** | Stores screenshots, banners, and demo GIFs used in the README. |
+| **database/** | Contains the SQLite database for users, reports, and prediction history. |
+| **docs/** | Additional project documentation such as architecture and deployment guides. |
+| **models/** | Stores the pretrained 3D U-Net model used for brain tumor segmentation. |
+| **static/** | Static resources including CSS, JavaScript, uploaded MRI scans, and prediction outputs. |
+| **templates/** | HTML templates used by the Flask web application. |
+| **app.py** | Main application entry point that starts the Flask server. |
+| **ai_model.py** | Loads the trained model, preprocesses MRI scans, and performs AI inference. |
+| **db.py** | Handles database initialization and CRUD operations. |
+| **config.py** | Centralized application configuration and environment settings. |
+| **requirements.txt** | Lists all Python package dependencies. |
+| **Dockerfile** | Defines the Docker image for containerized deployment. |
+| **README.md** | Project documentation and setup instructions. |
 
 ---
 
-# ⚡ Installation
+## 🏗️ Architecture Principles
 
-## Step 1 — Clone Repository
+- ✅ Modular project structure
+- ✅ Separation of frontend, backend, AI, and database logic
+- ✅ Scalable and maintainable code organization
+- ✅ Docker-ready deployment
+- ✅ Easy integration with cloud platforms
+- ✅ Clear directory layout for contributors
+  # ⚙️ Installation & Quick Start
+
+Get **BRAINAI** up and running in just a few minutes.
+
+---
+
+## 📋 Prerequisites
+
+Ensure the following software is installed on your system:
+
+| Requirement | Version |
+|-------------|---------|
+| Python | 3.10 or later |
+| Git | Latest |
+| pip | Latest |
+| Virtual Environment | Recommended |
+| RAM | Minimum 8 GB (16 GB recommended) |
+| GPU *(Optional)* | NVIDIA CUDA-enabled GPU for faster inference |
+
+---
+
+## 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/BRAINAI.git
+git clone https://github.com/manojroyal422/BRAINAI.git
 
 cd BRAINAI
 ```
 
 ---
 
-## Step 2 — Create Virtual Environment
+## 🐍 Create a Virtual Environment
 
 ### Windows
 
@@ -657,1038 +451,533 @@ source venv/bin/activate
 
 ---
 
-## Step 3 — Install Dependencies
+## 📦 Install Dependencies
+
+Upgrade pip:
 
 ```bash
 pip install --upgrade pip
+```
 
+Install required packages:
+
+```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## Step 4 — Verify Installation
+## ⚙️ Configure Environment Variables
 
-```bash
-python --version
+Create a `.env` file in the project root.
 
-pip list
-```
-
-Expected Output
-
-```
-Python 3.11
-
-TensorFlow
-
-Flask
-
-Nibabel
-
-NumPy
-
-Matplotlib
-```
-
----
-
-# ⚙️ Project Configuration
-
-## Required Directory
-
-```
-brainai/
-
-│
-
-├── app.py
-
-├── ai_model.py
-
-├── db.py
-
-├── requirements.txt
-
-├── brain_tumor_3DUNet.keras
-
-│
-
-├── static/
-
-│ ├── uploads/
-
-│ ├── results/
-
-│ ├── css/
-
-│ └── js/
-
-│
-
-└── templates/
-```
-
----
-
-# 📂 Environment Variables
-
-Create
-
-```
-.env
-```
-
-Example
+Example:
 
 ```env
 FLASK_APP=app.py
-
 FLASK_ENV=development
-
-SECRET_KEY=CHANGE_THIS_SECRET_KEY
-
+SECRET_KEY=your_secret_key
 DATABASE_URL=sqlite:///brainai.db
-
-MODEL_PATH=brain_tumor_3DUNet.keras
+MODEL_PATH=models/brain_tumor_3DUNet.keras
 ```
 
 ---
 
-# 🗄 Database Initialization
+## 🗄️ Initialize the Database
 
-Initialize SQLite
+Run:
 
 ```bash
 python db.py
 ```
 
-This creates
+This creates the required database tables for:
 
 - Users
-
-- Messages
-
 - Medical Reports
-
-- Report History
-
-- Admin Records
+- Prediction History
+- Activity Logs
 
 ---
 
-# 🧠 AI Model Setup
+## 🧠 Add the AI Model
 
-Place the trained model inside
+Place the pretrained model inside the `models/` directory:
 
-```
-brain_tumor_3DUNet.keras
-```
-
-Project root
-
-```
-brainai/
-
-brain_tumor_3DUNet.keras
+```text
+models/
+└── brain_tumor_3DUNet.keras
 ```
 
 ---
 
-# ▶️ Run Application
+## ▶️ Start the Application
 
 ```bash
 python app.py
 ```
 
-Visit
+Once the server starts, open your browser and visit:
 
-```
+```text
 http://localhost:5000
 ```
 
 ---
 
-# 🧪 Verify AI Pipeline
+## 🧪 Verify the Installation
 
-Upload
+After launching the application:
 
-✅ FLAIR
-
-↓
-
-✅ T1
-
-↓
-
-✅ T1CE
-
-↓
-
-✅ T2
-
-Run Prediction
-
-Expected Outputs
-
-- Tumor Mask
-
-- Overlay
-
-- Heatmap
-
-- Slice Graph
-
-- Medical Report
+1. Register or log in.
+2. Upload all four MRI modalities:
+   - FLAIR
+   - T1
+   - T1CE
+   - T2
+3. Run AI prediction.
+4. Verify that the platform generates:
+   - Brain tumor segmentation mask
+   - MRI overlay
+   - Confidence heatmap
+   - Slice-wise tumor distribution
+   - Medical report
 
 ---
 
-# 📁 Folder Structure
+## ✅ Installation Checklist
+
+| Task | Status |
+|------|:------:|
+| Clone Repository | ✅ |
+| Create Virtual Environment | ✅ |
+| Install Dependencies | ✅ |
+| Configure Environment | ✅ |
+| Initialize Database | ✅ |
+| Add AI Model | ✅ |
+| Run Application | ✅ |
+| Test AI Prediction | ✅ |
+# 🧠 AI Pipeline & Prediction Workflow
+
+BRAINAI follows a streamlined end-to-end AI inference pipeline that transforms multimodal MRI scans into clinically meaningful visualizations and reports. The workflow combines medical image preprocessing, deep learning inference, explainable AI, and automated report generation.
+
+---
+
+## 🔄 AI Inference Pipeline
+
+```mermaid
+flowchart LR
+
+A[📂 Upload MRI Scans]
+--> B[🩻 Validate MRI Files]
+
+B --> C[⚙️ Image Preprocessing]
+
+C --> D[📊 Normalize MRI Volumes]
+
+D --> E[🧩 Stack MRI Modalities]
+
+E --> F[🧠 3D U-Net Inference]
+
+F --> G[🎯 Brain Tumor Segmentation]
+
+G --> H[🔥 Confidence Heatmap]
+
+G --> I[🖼️ Tumor Overlay]
+
+G --> J[📈 Slice-wise Analysis]
+
+H --> K[📄 Medical Report]
+
+I --> K
+
+J --> K
+
+K --> L[(SQLite Database)]
+
+L --> M[👨‍⚕️ Doctor Dashboard]
+
+L --> N[👤 Patient Dashboard]
+```
+
+---
+
+# 📋 Pipeline Stages
+
+## 1️⃣ MRI Upload
+
+Users upload the four required MRI modalities:
+
+- 🧠 FLAIR
+- 🧠 T1
+- 🧠 T1CE
+- 🧠 T2
+
+Supported formats:
+
+- `.nii`
+- `.nii.gz`
+
+---
+
+## 2️⃣ Image Validation
+
+Before AI inference, the platform verifies:
+
+- File format
+- Number of uploaded modalities
+- Missing scans
+- Invalid files
+
+Only valid MRI datasets proceed to the prediction stage.
+
+---
+
+## 3️⃣ MRI Preprocessing
+
+The preprocessing pipeline prepares MRI volumes for deep learning inference by:
+
+- Loading NIfTI images
+- Normalizing voxel intensities
+- Resizing volumes (if required)
+- Stacking all MRI modalities into a single input tensor
+
+---
+
+## 4️⃣ Deep Learning Inference
+
+The preprocessed MRI volume is passed to a pretrained **3D U-Net** segmentation model built with **TensorFlow** and **Keras**.
+
+The model predicts tumor regions across the complete 3D MRI volume.
+
+---
+
+## 5️⃣ Explainable AI Outputs
+
+After segmentation, BRAINAI generates:
+
+- 🧠 Brain Tumor Segmentation Mask
+- 🖼️ MRI Overlay Images
+- 🔥 Confidence Heatmap
+- 📈 Slice-wise Tumor Distribution
+- 📊 Tumor Volume Estimation
+
+These visualizations help users interpret AI predictions more effectively.
+
+---
+
+## 6️⃣ Automated Medical Report
+
+The platform automatically compiles prediction results into a structured report containing:
+
+- Prediction Summary
+- Tumor Detection Status
+- Confidence Score
+- Supporting Visualizations
+- Report Timestamp
+
+---
+
+## 7️⃣ Secure Data Storage
+
+All prediction results and reports are securely stored in the SQLite database, enabling:
+
+- Patient history tracking
+- Previous prediction retrieval
+- Report management
+- Doctor review
+
+---
+
+# 🎯 AI Workflow Summary
 
 ```text
-brainai/
-│
-├── app.py                     # Flask application
-├── ai_model.py                # AI inference
-├── db.py                      # SQLite operations
-├── requirements.txt
-├── README.md
-├── brain_tumor_3DUNet.keras
-│
-├── static/
-│   ├── uploads/
-│   ├── results/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── templates/
-│   ├── login.html
-│   ├── register.html
-│   ├── dashboard.html
-│   ├── prediction.html
-│   ├── admin_dashboard.html
-│   └── report.html
-│
-└── database/
-    └── brainai.db
+MRI Upload
+      │
+      ▼
+Image Validation
+      │
+      ▼
+Preprocessing
+      │
+      ▼
+3D U-Net Prediction
+      │
+      ▼
+Tumor Segmentation
+      │
+      ▼
+Explainable AI
+      │
+      ▼
+Medical Report
+      │
+      ▼
+Database Storage
+      │
+      ▼
+Patient & Doctor Dashboard
 ```
+
+---
+
+## 🚀 Key Advantages
+
+- ✅ End-to-end automated AI pipeline
+- ✅ Supports multimodal MRI analysis
+- ✅ Explainable AI visualizations
+- ✅ Automated report generation
+- ✅ Secure storage of prediction history
+- ✅ Modular and scalable architecture
+- ✅ Ready for clinical research and future cloud deployment
+  # 📊 Model Performance & Results
+
+The BRAINAI platform uses a pretrained **3D U-Net** model to perform automatic brain tumor segmentation on multimodal MRI scans. The model generates pixel-level segmentation masks along with explainable visualizations to assist in medical image interpretation.
+
+> **Note:** Replace the following values with the results obtained from your own evaluation before publishing or citing them.
+
+---
+
+## 📈 Evaluation Metrics
+
+| Metric | Description | Value* |
+|---------|-------------|:------:|
+| Dice Score | Segmentation overlap between prediction and ground truth | **0.91** |
+| IoU (Jaccard Index) | Region similarity | **0.86** |
+| Precision | Correct positive predictions | **0.93** |
+| Recall | Tumor detection sensitivity | **0.90** |
+| F1-Score | Balance of precision and recall | **0.91** |
+| Accuracy | Overall prediction accuracy | **97.2%** |
+
+> *Replace these placeholder values with your actual experimental results.
+
+---
+
+# 🧠 Supported Tumor Classes
+
+| Class | Description |
+|--------|-------------|
+| Background | Healthy brain tissue |
+| Edema | Swelling around the tumor |
+| Enhancing Tumor | Active tumor region |
+| Necrotic Core | Non-viable tumor tissue |
+
+---
+
+# 📸 Sample AI Outputs
+
+The platform generates multiple outputs for each MRI study:
+
+| Output | Description |
+|---------|-------------|
+| 🧠 Segmentation Mask | Pixel-level tumor segmentation |
+| 🖼️ MRI Overlay | Original MRI combined with predicted tumor mask |
+| 🔥 Confidence Heatmap | Visualization of model prediction confidence |
+| 📈 Slice-wise Analysis | Tumor distribution across MRI slices |
+| 📊 Tumor Volume | Estimated tumor size and affected region |
+| 📄 Medical Report | AI-generated clinical summary |
+
+---
+
+# 🎯 Explainable AI
+
+Rather than returning only a segmentation mask, BRAINAI provides visual explanations to improve transparency and assist clinical interpretation.
+
+Generated explainability outputs include:
+
+- 🔥 Confidence Heatmaps
+- 🖼️ MRI Overlay Images
+- 📈 Slice-wise Tumor Distribution
+- 📊 Tumor Volume Estimation
+- 📄 AI-generated Medical Report
+
+These outputs help users understand **where** the model predicts tumor regions and **how confident** it is in those predictions.
+
+---
+
+# 📋 Performance Highlights
+
+- ✅ Automatic brain tumor segmentation
+- ✅ Multimodal MRI support
+- ✅ Pixel-level prediction
+- ✅ Explainable AI visualizations
+- ✅ Automated report generation
+- ✅ Interactive web interface
+- ✅ Secure prediction history
+
+---
+
+# 🔬 Future Evaluation
+
+Future versions of the project may include:
+
+- External dataset validation
+- Cross-validation experiments
+- Comparative evaluation against other segmentation models
+- Inference time benchmarking
+- Model optimization for faster prediction
+- Cloud-based inference performance analysis
+  # 🔒 Security Features
+
+BRAINAI is designed with security and reliability in mind to protect sensitive medical information and ensure safe AI-assisted workflows.
+
+---
+
+## 🛡️ Security Features
+
+| Feature | Description |
+|---------|-------------|
+| 🔐 Secure Authentication | User authentication with role-based access for Patients, Doctors, and Administrators. |
+| 👥 Role-Based Access Control | Restricts access to features based on user roles. |
+| 📂 File Validation | Accepts only valid `.nii` and `.nii.gz` MRI files. |
+| 🚫 Input Validation | Prevents invalid or incomplete MRI uploads before inference. |
+| 🔒 Session Management | Secure user sessions to protect authenticated access. |
+| 💾 Secure Database | Stores users, reports, and prediction history in SQLite. |
+| 📜 Activity Tracking | Records prediction history and report generation for audit purposes. |
+| ⚠️ Error Handling | Handles invalid inputs gracefully without exposing sensitive information. |
+
+---
+
+## 🏥 Data Protection
+
+The platform is designed to:
+
+- Protect user authentication data.
+- Validate uploaded MRI files before processing.
+- Prevent unauthorized dashboard access.
+- Maintain patient prediction history securely.
+- Store AI-generated reports for future reference.
+
+> **Note:** This project is intended for educational and research purposes and is **not certified for clinical diagnosis or treatment**.
 
 ---
 
 # 🐳 Docker Deployment
 
-## Dockerfile
+BRAINAI can be deployed using Docker for a consistent and portable runtime environment.
 
-```dockerfile
-FROM python:3.11-slim
-
-WORKDIR /app
-
-COPY . .
-
-RUN pip install --no-cache-dir -r requirements.txt
-
-EXPOSE 5000
-
-CMD ["python","app.py"]
-```
-
----
-
-## Build Image
+## Build Docker Image
 
 ```bash
 docker build -t brainai .
 ```
 
----
-
-## Run Container
+## Run Docker Container
 
 ```bash
 docker run -p 5000:5000 brainai
+```
+
+The application will be available at:
+
+```text
+http://localhost:5000
 ```
 
 ---
 
 # ☁️ Cloud Deployment
 
-Supports
+BRAINAI can be deployed on multiple cloud platforms:
 
-| Platform | Status |
-|----------|--------|
+| Platform | Support |
+|----------|:-------:|
 | AWS EC2 | ✅ |
-| Azure VM | ✅ |
-| Google Cloud | ✅ |
+| Microsoft Azure | ✅ |
+| Google Cloud Platform | ✅ |
 | Railway | ✅ |
 | Render | ✅ |
 | Docker | ✅ |
 
 ---
 
-# 📦 Requirements
+# ⚡ Production Readiness
 
-```
-Flask
+The project follows a modular architecture that supports future enhancements and production deployment.
 
-TensorFlow
+Current capabilities include:
 
-Keras
+- ✅ Modular Flask backend
+- ✅ REST-oriented application structure
+- ✅ Docker support
+- ✅ Secure authentication
+- ✅ AI inference pipeline
+- ✅ Automated report generation
+- ✅ Database integration
+- ✅ Responsive web interface
 
-NumPy
+Future improvements may include:
 
-Nibabel
-
-Matplotlib
-
-Pillow
-
-OpenCV
-
-SQLite3
-```
-
----
-
-# 🧪 Running Tests
-
-```bash
-pytest
-```
-
-or
-
-```bash
-python tests.py
-```
+- PostgreSQL or MySQL support
+- JWT/OAuth authentication
+- HTTPS deployment
+- Cloud object storage (AWS S3, Azure Blob)
+- CI/CD pipeline with GitHub Actions
+- Model versioning
+- Multi-user concurrency
+- Kubernetes deployment
 
 ---
 
-# 🔒 Security Best Practices
+# 📈 Scalability
 
-- ✅ Validate uploaded files
-
-- ✅ Accept only `.nii` & `.nii.gz`
-
-- ✅ Store passwords securely
-
-- ✅ Restrict Admin Dashboard
-
-- ✅ Validate file size
-
-- ✅ Prevent duplicate uploads
-
-- ✅ Log report activity
-
-- ✅ Protect session cookies
-
----
-
-# 📊 Project Workflow
+The architecture is designed to scale from individual research use to larger healthcare environments.
 
 ```text
-Clone Repository
-        │
-        ▼
-Create Virtual Environment
-        │
-        ▼
-Install Requirements
-        │
-        ▼
-Initialize Database
-        │
-        ▼
-Add AI Model
-        │
-        ▼
-Run Flask Server
-        │
-        ▼
-Upload MRI
-        │
-        ▼
-Generate Prediction
-        │
-        ▼
-Medical Report
-```
-
----
-
-# ✅ Installation Checklist
-
-| Task | Status |
-|------|--------|
-| Clone Repository | ✅ |
-| Install Dependencies | ✅ |
-| Configure Environment | ✅ |
-| Initialize Database | ✅ |
-| Add AI Model | ✅ |
-| Run Application | ✅ |
-| Verify Prediction | ✅ |
-
----
-
-<div align="center">
-
-## 🎉 Congratulations!
-
-Your BRAINAI platform is now ready for AI-powered brain tumor segmentation.
-
-⭐ If this project helped you, consider giving it a star on GitHub.
-
-</div>
-# 📸 Application Showcase
-
-<div align="center">
-
-# 🏥 BRAINAI Dashboard Showcase
-
-**End-to-End AI Brain Tumor Segmentation Platform**
-
-</div>
-
----
-
-## 🔐 Authentication Portal
-
-<p align="center">
-<img width="900" src="https://github.com/user-attachments/assets/466370dc-a5e4-4827-a6bd-d58fd2b98a06">
-</p>
-
-Secure login with role-based authentication for Patients and Administrators.
-
----
-
-## 🏥 Patient Dashboard
-
-<p align="center">
-<img width="1000" src="https://github.com/user-attachments/assets/f39d243c-f921-4b14-88d0-d8f49f00d413">
-</p>
-
-Upload four MRI modalities:
-
-- ✅ FLAIR
-- ✅ T1
-- ✅ T1CE
-- ✅ T2
-
-The application validates the upload order before running AI inference.
-
----
-
-## 🧠 AI Segmentation Results
-
-<p align="center">
-<img width="1000" src="https://github.com/user-attachments/assets/fab4bb24-5c20-4831-b7bc-1714a3681f57">
-</p>
-
-Generated automatically:
-
-- Brain Tumor Segmentation
-- Tumor Overlay
-- Prediction Confidence
-- Tumor Volume
-- AI Diagnosis
-
----
-
-## 🔥 Confidence Heatmap
-
-<p align="center">
-<img width="1000" src="https://github.com/user-attachments/assets/d613f51c-00ad-402e-bd55-49d366d13ee0">
-</p>
-
-The confidence heatmap highlights the model's prediction certainty, improving result interpretability.
-
----
-
-## 📈 Slice-wise Tumor Analysis
-
-<p align="center">
-<img width="1000" src="https://github.com/user-attachments/assets/546902ec-e09f-4e46-a32c-2e062585ccaf">
-</p>
-
-Visualizes tumor distribution across MRI slices.
-
----
-
-## 📥 Output Download Center
-
-<p align="center">
-<img width="1000" src="https://github.com/user-attachments/assets/d24c7a12-a1f3-4b19-a6b7-2fbfc8cafbd2">
-</p>
-
-Download:
-
-- Segmentation Mask
-- Overlay
-- Heatmap
-- Tumor Graph
-- Medical Report
-
----
-
-## 🩺 Patient Medical History
-
-<p align="center">
-<img width="1000" src="https://github.com/user-attachments/assets/ed3e8a5f-6715-42ac-aa7d-aa5ec69c9dda">
-</p>
-
-View previous predictions, timestamps, doctor information, and report status.
-
----
-
-## 👤 User Profile
-
-<p align="center">
-<img width="900" src="https://github.com/user-attachments/assets/39e33aa0-8cd7-4bd8-b4c3-42674eb408a5">
-</p>
-
-Manage personal information and account settings.
-
----
-
-## 🛡️ Administrator Dashboard
-
-<p align="center">
-
-<img width="1000" src="https://github.com/user-attachments/assets/8fa4bc0b-8388-43da-afe8-83e5a3d92c22">
-
-<br><br>
-
-<img width="1000" src="https://github.com/user-attachments/assets/14a6275d-c2bb-465d-b385-a018182df0e5">
-
-<br><br>
-
-<img width="1000" src="https://github.com/user-attachments/assets/2850db97-589e-43fc-9ec0-e9ac55ac0249">
-
-</p>
-
-Administrator Features:
-
-- User Management
-- Patient Monitoring
-- Report Tracking
-- Doctor Records
-- Activity Logs
-
----
-
-## 📄 Report Activity
-
-The platform stores:
-
-| Field | Description |
-|--------|-------------|
-| Patient | Registered User |
-| Doctor | Assigned Doctor |
-| Prediction | Tumor / No Tumor |
-| Confidence | AI Confidence |
-| Tumor Volume | Estimated Size |
-| Timestamp | Report Date |
-| Status | Sent / Pending |
-
----
-
-# 🎯 AI Output Summary
-
-| Feature | Available |
-|----------|-----------|
-| 🧠 Brain Tumor Segmentation | ✅ |
-| 🔥 Confidence Heatmap | ✅ |
-| 📈 Slice Graph | ✅ |
-| 📄 Medical Report | ✅ |
-| 📧 Doctor Report Sharing | ✅ |
-| 🗂 Patient History | ✅ |
-| 🛡 Admin Dashboard | ✅ |
-
----
-
-# 🚀 End-to-End Workflow
-
-```mermaid
-flowchart LR
-
-A[Patient Login]
---> B[Upload MRI]
---> C[Preprocessing]
---> D[3D U-Net Inference]
---> E[Tumor Segmentation]
---> F[Visualization]
---> G[Medical Report]
---> H[Doctor Review]
-```
-
----
-
-# 💡 Why BRAINAI?
-
-| Feature | Benefit |
-|----------|----------|
-| 🧠 AI-powered Segmentation | Accurate Tumor Detection |
-| 📊 Interactive Visualization | Better Clinical Interpretation |
-| 📄 Automated Reports | Faster Diagnosis Support |
-| 📧 Doctor Sharing | Easy Collaboration |
-| 🛡 Secure Authentication | Protected Patient Data |
-| 🗂 Patient History | Long-term Monitoring |
-
----
-
-<div align="center">
-
-## ⭐ Complete AI Workflow
-
-**MRI Upload → AI Prediction → Visualization → Medical Report → Doctor Review**
-
-</div>
-# 🧠 Artificial Intelligence Engine
-
-<div align="center">
-
-# 📊 Model Performance Metrics
-
-> Replace these values with your actual evaluation results.
-
-| Metric | Value |
-|---------|------:|
-| Dice Score | 0.91 |
-| IoU | 0.86 |
-| Precision | 0.93 |
-| Recall | 0.90 |
-| Accuracy | 97.2% |
-| F1 Score | 0.91 |
-
----
-
-# 📈 Evaluation Metrics
-
-| Metric | Purpose |
-|---------|---------|
-| Dice Coefficient | Segmentation overlap |
-| IoU | Region similarity |
-| Precision | False Positive control |
-| Recall | Tumor detection sensitivity |
-| F1 Score | Balanced segmentation quality |
-
----
-
-# 🧠 Tumor Classes
-
-| Class | Description |
-|---------|-------------|
-| Background | Healthy tissue |
-| Edema | Swelling around tumor |
-| Enhancing Tumor | Active tumor |
-| Necrotic Core | Dead tumor tissue |
-
----
-
-# 📂 Dataset Overview
-
-| Property | Details |
-|----------|---------|
-| MRI Type | Multimodal |
-| File Format | `.nii`, `.nii.gz` |
-| Dimensions | 3D Volumes |
-| Modalities | FLAIR, T1, T1CE, T2 |
-
-> Update this section with your dataset source (e.g., BraTS) if applicable.
-
----
-
-# 🔬 Explainable AI
-
-BRAINAI enhances transparency by generating:
-
-- 🔥 Confidence Heatmaps
-- 🧠 Tumor Overlay Images
-- 📈 Slice-wise Activity Graphs
-- 📊 Tumor Volume Statistics
-- 📄 AI-generated Medical Reports
-
-These outputs help users interpret model predictions rather than relying on a black-box result.
-
----
-
-# ⚡ Inference Outputs
-
-| Output | Description |
-|---------|-------------|
-| Segmentation Mask | Binary / multi-class prediction |
-| Overlay | MRI + predicted tumor |
-| Heatmap | Prediction confidence |
-| Slice Graph | Tumor distribution |
-| Tumor Volume | Estimated size |
-| Report | Clinical summary |
-
----
-
-# 📚 Research References
-
-If your work is based on published research, include references here, for example:
-
-- 3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation
-- BraTS Challenge publications
-- TensorFlow and Keras documentation
-
-Replace these with the exact papers or resources you used.
-
----
-
-# 🚀 Future Improvements
-
-- 🔬 Multi-class tumor segmentation
-- ☁️ Cloud deployment
-- 📱 Mobile application
-- 🧠 Vision Transformer (ViT) support
-- ⚡ Faster inference optimization
-- 🏥 PACS integration
-- 📄 PDF report export
-- 🤖 LLM-assisted clinical summaries
-
----
-
-<div align="center">
-
-## 💙 Advancing Medical AI with Explainable Deep Learning
-
-**MRI → AI Segmentation → Visualization → Clinical Insights**
-
-</div>
-
----
-# 🚀 Enterprise Features
-
-<div align="center">
-
-# 🌟 Why Choose BRAINAI?
-
-**Modern AI • Medical Imaging • Explainable AI • Production Ready**
-
-</div>
-
----
-
-# 🎯 Core Features
-
-<table>
-
-<tr>
-
-<td width="33%" align="center">
-
-## 🧠 AI Engine
-
-Automatic Brain Tumor Segmentation
-
-3D U-Net Architecture
-
-Multimodal MRI Analysis
-
-Real-time Inference
-
-Explainable AI
-
-</td>
-
-<td width="33%" align="center">
-
-## 🏥 Healthcare
-
-Patient Management
-
-Doctor Reports
-
-Medical History
-
-Report Tracking
-
-Clinical Workflow
-
-</td>
-
-<td width="33%" align="center">
-
-## ⚙️ Platform
-
-Flask Backend
-
-SQLite Database
-
-REST Architecture
-
-Role-Based Access
-
-Secure Authentication
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# 📋 Complete Feature Matrix
-
-| Category | Features |
-|-----------|----------|
-| 🔐 Authentication | Login, Registration, Sessions, Role-based Access |
-| 📂 Upload | MRI Validation, File Security, Upload Queue |
-| 🧠 AI | 3D U-Net Prediction, Tumor Segmentation |
-| 📊 Analytics | Heatmaps, Slice Graphs, Tumor Volume |
-| 📄 Reports | PDF Ready, Doctor Sharing, Report History |
-| 🛡 Admin | User Management, Activity Logs, Reports |
-| 💾 Storage | SQLite Database, MRI Storage |
-| 📈 Dashboard | Patient History, Predictions, Statistics |
-
----
-
-# 🔐 Security Features
-
-<div align="center">
-
-## Enterprise-Level Security
-
-</div>
-
-| Security Layer | Description |
-|----------------|-------------|
-| 🔑 Password Authentication | Secure Login |
-| 👥 Role-Based Access | Patient & Admin |
-| 📂 File Validation | Accept only `.nii` & `.nii.gz` |
-| 🚫 Invalid Upload Detection | Automatic Validation |
-| 💾 Secure Database | SQLite |
-| 📜 Activity Logs | User Tracking |
-| 📄 Report History | Audit Trail |
-| 🛡 Session Management | Protected Sessions |
-
----
-
-# ⚡ Performance
-
-| Metric | Performance |
-|----------|-------------|
-| MRI Loading | Fast |
-| AI Inference | Optimized |
-| Database Access | Low Latency |
-| Dashboard | Responsive |
-| Heatmap Generation | Automatic |
-| Report Generation | Instant |
-
----
-
-# 📊 Scalability
-
-```text
-1 User
-
-↓
-
-10 Users
-
-↓
-
-100 Users
-
-↓
-
-1000 Users
-
-↓
-
+Single User
+      │
+      ▼
+Small Clinic
+      │
+      ▼
+Hospital Department
+      │
+      ▼
+Multi-Hospital Network
+      │
+      ▼
 Cloud Deployment
-
-↓
-
-Hospital Scale
 ```
 
 ---
 
-
-# 📈 Prediction Outputs
-
-| Output | Generated |
-|----------|-----------|
-| Brain Tumor Mask | ✅ |
-| Overlay Image | ✅ |
-| Heatmap | ✅ |
-| Slice Graph | ✅ |
-| Tumor Volume | ✅ |
-| Medical Report | ✅ |
-| Patient History | ✅ |
-
----
-
----
-
-# 🔬 Explainable AI
-
-Unlike traditional black-box AI systems,
-
-BRAINAI provides:
-
-✅ Tumor Overlay
-
-✅ Confidence Heatmap
-
-✅ Slice Graph
-
-✅ Prediction Confidence
-
-✅ Tumor Volume
-
-making every prediction interpretable.
-
----
-
-# ⚙️ Production Ready
-
-✔ Modular Codebase
-
-✔ Clean Architecture
-
-✔ Secure Authentication
-
-✔ Medical Report Tracking
-
-✔ AI Visualization
-
-✔ Explainable AI
-
-✔ Dashboard Analytics
-
-✔ Database Integration
-
-✔ Enterprise Ready
-
----
-
-# 🌍 Real-World Applications
-
-🏥 Hospitals
-
-🧠 Research Labs
-
-🎓 Universities
-
-📊 Medical AI Research
-
-☁ Cloud AI Platforms
-
-🤖 Healthcare Startups
-
----
-
-# 💡 Future Roadmap
-
-```mermaid
-timeline
-
-title BRAINAI Roadmap
-
-2026 : Flask Platform
-2026 : AI Segmentation
-2027 : Cloud Deployment
-2027 : Mobile Application
-2028 : Multi-Hospital Platform
-2028 : Explainable AI Dashboard
-2029 : Federated Learning
-2030 : Clinical Decision Support
-```
-
----
----
-
-# 📌 Key Advantages
-
-✅ End-to-End Brain Tumor Analysis
-
-✅ Explainable AI
-
-✅ Interactive Dashboard
-
-✅ Automated Reporting
-
-✅ Clinical Workflow Support
-
-✅ Secure Role-Based Access
-
-✅ Research Friendly
-
-✅ Production Ready
-
----
-
-<div align="center">
-
-# 💙 Building the Future of Medical AI
-
-**Artificial Intelligence × Medical Imaging × Explainable Healthcare**
-
-⭐ **If you like this project, don't forget to Star ⭐ the repository!**
-
-</div>
-
----
-# 🚀 Demo & Quick Links
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/manojroyal422)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Manoj_Royal-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/YOUR-LINKEDIN)
-
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python)]
-
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow)]
-
-[![Flask](https://img.shields.io/badge/Flask-Web_App-000000?style=for-the-badge&logo=flask)]
-
-</div>
-
----
-
-# 🎥 Demo
-
-> Add a short screen recording or GIF here showing:
->
-> 1. Login
-> 2. MRI upload
-> 3. AI prediction
-> 4. Segmentation result
-> 5. Report generation
-
-<p align="center">
-
-<img width="900" src="YOUR_DEMO_GIF_URL"/>
-
-</p>
-
----
-
-# 📈 Project Highlights
-
-- 🧠 3D U-Net based brain tumor segmentation
-- 🏥 Multimodal MRI support (FLAIR, T1, T1CE, T2)
-- 📊 Explainable AI with overlays and confidence heatmaps
-- 📄 Automated medical report generation
-- 👨‍⚕️ Doctor report sharing workflow
-- 🔐 Secure authentication with role-based access
-- 📚 Patient history and activity tracking
+## 🚀 Why This Architecture?
+
+- 🧠 AI-powered medical image analysis
+- 🔒 Secure and modular design
+- 📦 Easy deployment with Docker
+- ☁️ Cloud-ready architecture
+- 📈 Scalable for future healthcare applications
+- 🛠️ Easy to maintain and extend
+  # 🛣️ Roadmap
+
+The following roadmap outlines planned enhancements for future versions of **BRAINAI**.
+
+| Version | Planned Features | Status |
+|----------|------------------|:------:|
+| v1.0 | Brain Tumor Segmentation using 3D U-Net | ✅ Completed |
+| v1.1 | Explainable AI (Heatmaps & Overlays) | ✅ Completed |
+| v1.2 | Patient History & Medical Reports | ✅ Completed |
+| v1.3 | Docker Deployment | ✅ Completed |
+| v2.0 | PostgreSQL Integration | 🔄 Planned |
+| v2.1 | Cloud Deployment (AWS/Azure/GCP) | 🔄 Planned |
+| v2.2 | REST API for External Integration | 🔄 Planned |
+| v2.3 | PDF Report Export | 🔄 Planned |
+| v2.4 | Multi-Hospital Support | 🔄 Planned |
+| v3.0 | Vision Transformer (ViT) Segmentation | 🔄 Planned |
+| v3.1 | PACS Integration | 🔄 Planned |
+| v3.2 | LLM-assisted Clinical Report Generation | 🔄 Planned |
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome!
+Contributions are welcome and appreciated!
+
+If you would like to improve BRAINAI, please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch.
+2. Create a feature branch.
 
 ```bash
 git checkout -b feature/your-feature
@@ -1700,21 +989,25 @@ git checkout -b feature/your-feature
 git commit -m "Add your feature"
 ```
 
-4. Push the branch.
+4. Push your branch.
 
 ```bash
 git push origin feature/your-feature
 ```
 
-5. Open a Pull Request.
+5. Open a Pull Request describing your changes.
+
+Please ensure that:
+
+- Code follows the existing project structure.
+- New features include appropriate documentation.
+- Pull requests remain focused on a single improvement.
 
 ---
 
 # 🐞 Reporting Issues
 
-Found a bug?
-
-Please include:
+If you encounter a bug or unexpected behavior, please include:
 
 - Operating System
 - Python Version
@@ -1727,75 +1020,95 @@ Please include:
 
 # 📚 References
 
-If applicable, list the resources that influenced your implementation:
+This project is built using open-source technologies and research in medical image segmentation.
+
+Key references include:
 
 - TensorFlow Documentation
 - Keras Documentation
 - Flask Documentation
 - NiBabel Documentation
-- Medical imaging literature or datasets (e.g., BraTS) used by your project
+- Medical imaging literature and publicly available datasets (such as BraTS, if applicable)
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute this project in accordance with the terms of the license.
+
+See the **LICENSE** file for more information.
+
+---
+
+# 👨‍💻 Author
+
+## Manoj Royal
+
+**AI & Machine Learning Engineer**
+
+Passionate about building intelligent systems that solve real-world healthcare problems using Artificial Intelligence, Deep Learning, Computer Vision, and Medical Imaging.
+
+### Interests
+
+- 🤖 Artificial Intelligence
+- 🧠 Deep Learning
+- 🩻 Medical Imaging
+- 👁️ Computer Vision
+- ⚙️ Generative AI
+- ☁️ Cloud AI
+
+---
+
+# 📬 Connect with Me
+
+<p align="center">
+
+<a href="https://github.com/manojroyal422">
+<img src="https://img.shields.io/badge/GitHub-manojroyal422-181717?style=for-the-badge&logo=github">
+</a>
+
+<a href="https://www.linkedin.com/in/manoj-royal-270301270">
+<img src="https://img.shields.io/badge/LinkedIn-Manoj%20Royal-0077B5?style=for-the-badge&logo=linkedin">
+</a>
+
+<a href="mailto:manojroyal1320@gmail.com">
+<img src="https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail">
+</a>
+
+</p>
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, please consider supporting it by:
+
+- ⭐ Starring the repository
+- 🍴 Forking the project
+- 🛠️ Contributing improvements
+- 📢 Sharing it with others
+- 💡 Opening issues for suggestions or bug reports
+
+Your support helps improve the project and encourages future development.
 
 ---
 
 # 🙏 Acknowledgements
 
-Thanks to the open-source community and the maintainers of:
+Special thanks to the open-source community and the developers behind:
 
 - TensorFlow
 - Keras
 - Flask
 - NiBabel
 - NumPy
+- OpenCV
 - Matplotlib
+- SQLite
 
----
-
-# 👨‍💻 Author
-
-<div align="center">
-
-## Manoj Royal
-
-AI / ML Engineer
-
-Interested in:
-
-- Artificial Intelligence
-- Medical Imaging
-- Deep Learning
-- Generative AI
-- Computer Vision
-
-</div>
-
----
-
-# 📬 Contact
-
-<div align="center">
-
-📧 Email: manojroyal1320@gmail.com
-
-💼 LinkedIn: linkedin.com/in/manoj-royal-270301270
-
-
-🐙 GitHub: https://github.com/manojroyal422
-
-</div>
-
----
-
-# ⭐ Support
-
-If you found this project useful:
-
-⭐ Star the repository
-
-🍴 Fork it
-
-🛠️ Contribute improvements
-
-📢 Share it with others
+Their tools and documentation made this project possible.
 
 ---
 
@@ -1803,8 +1116,12 @@ If you found this project useful:
 
 # 🧠 BRAINAI
 
-### AI for Medical Imaging
+### AI-Powered Brain Tumor Segmentation Platform
 
-Built with ❤️ using Python, Flask, TensorFlow, and Keras.
+**Artificial Intelligence × Medical Imaging × Explainable Healthcare**
+
+⭐ *If you enjoyed this project, don't forget to leave a Star!* ⭐
+
+Made with ❤️ by **Manoj Royal**
 
 </div>
