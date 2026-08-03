@@ -1,0 +1,14 @@
+Flask
+gunicorn
+tensorflow
+keras
+numpy
+pandas
+opencv-python
+Pillow
+matplotlib
+scikit-learn
+scipy
+nibabel
+h5py
+imageio
