@@ -237,6 +237,7 @@ Features:
 
 ## 📂 MRI Upload
 
+<p align="center"> <img width="1000" src="https://github.com/user-attachments/assets/fab4bb24-5c20-4831-b7bc-1714a3681f57"> </p>
 
 
 Supported MRI modalities:
