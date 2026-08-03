@@ -251,9 +251,8 @@ The platform validates all uploaded files before AI inference.
 
 ## 🧠 AI Prediction Results
 
-<p align="center">
-<img width="1000" src="https://github.com/user-attachments/assets/fab4bb24-5c20-4831-b7bc-1714a3681f57">
-</p>
+<p align="center"> <img width="1000" src="https://github.com/user-attachments/assets/fab4bb24-5c20-4831-b7bc-1714a3681f57"> </p>
+
 
 Generated outputs include:
 
